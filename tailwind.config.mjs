@@ -8,8 +8,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#F36224",
+        secondary:"#2C2C62",
+        bodyText: "#212B36",
+        headingText: "#15141B",
+        gradientStart: "rgba(112, 112, 112, 0.1)", // #707070 with 100% opacity
+        gradientEnd: "rgba(255, 102, 37, 1)",    // #ff6625 with 100% opacity
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to bottom, var(--tw-gradient-from), var(--tw-gradient-to))',
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },
