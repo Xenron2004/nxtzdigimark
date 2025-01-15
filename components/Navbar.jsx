@@ -100,7 +100,7 @@ const Navbar = () => {
           </div>
 
           <div className="lg:hidden flex  justify-between items-center">
-            <button onClick={toggleMenu} className="text-white">
+            <button onClick={toggleMenu} className="text-headingText">
               {isMenuOpen ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +138,7 @@ const Navbar = () => {
         <div
           className={`${
             isMenuOpen ? "flex" : "hidden"
-          } lg:hidden absolute top-0 left-0 right-0 bottom-0 bg-[#0D0D12]  flex-col items-start justify-start gap-8  transition-all h-screen ease-in-out duration-500`}
+          } lg:hidden absolute top-0 left-0 right-0 bottom-0 bg-white  flex-col items-start justify-start gap-8  transition-all h-screen ease-in-out duration-500`}
         >
           {/* Logo and Close Button */}
           <div className=" flex absolute w-full top-0 p-6 justify-between items-center">
@@ -153,7 +153,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div>
-              <button onClick={toggleMenu} className="text-white">
+              <button onClick={toggleMenu} className="text-headingText">
                 <IoCloseSharp size={24} />
               </button>
             </div>
@@ -177,7 +177,7 @@ const Navbar = () => {
                 href="/solutions"
                 className="text-headingText font-montserrat font-medium text-[17px]"
               >
-                Solutions
+                Products
               </Link>
             </div>
             <div>
@@ -193,7 +193,7 @@ const Navbar = () => {
                 href="/pricings"
                 className="text-headingText font-montserrat font-medium text-[17px]"
               >
-                Pricings
+                Gallery
               </Link>
             </div>
             <div>
@@ -212,7 +212,7 @@ const Navbar = () => {
               onClick={() => {
                 window.location.href = "/contact"; // Replace with your desired path
               }}
-              className="md:max-w-[216px] font-montserrat h-[45px] bg-[#006ff9] font-medium flex items-center justify-center text-headingText w-full py-4 px-6 rounded-3xl"
+              className="md:max-w-[216px] font-montserrat h-[45px] bg-primary font-medium flex items-center justify-center text-white w-full py-6 px-6"
             >
               Let's Talk!
             </button>
