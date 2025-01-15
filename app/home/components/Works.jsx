@@ -406,10 +406,10 @@ const Works = () => {
     <section className="flex flex-col items-center w-full justify-center">
       <div className=" w-11/12 max-w-[1280px] flex items-center flex-col justify-center">
         <div className="text-center mb-8 md:mb-12">
-          <h4 className="text-sm font-medium text-orange-500 mb-2">
+          <h4 className="text-[15px]  font-semibold font-montserrat text-secondary mb-2">
             SIGNATURE WORKS
           </h4>
-          <h2 className="text-3xl md:text-4xl font-bold">Our Previous Works</h2>
+          <h2 className="text-[28px] md:text-[40px] font-montserrat font-normal">Our Previous Works</h2>
         </div>
 
         <div
