@@ -21,6 +21,9 @@ export default {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
       },
+      boxShadow: {
+        custom: '0px 2px 20px 0px rgba(0, 0, 0, 0.15)', // Custom shadow
+      },
     },
   },
   plugins: [],

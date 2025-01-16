@@ -20,7 +20,7 @@ const Home = () => {
       <div className="flex flex-col gap-y-10   md:flex-row items-center max-w-7xl w-11/12 justify-between">
         {/* LEft section */}
         <div className="flex flex-col gap-5 mt-10 items-start md:max-w-[525px] w-full h-auto justify-center ">
-          {/* heading & small texy */}
+          {/* heading & small text */}
           <div className="flex flex-col gap-3 ">
             <p className=" capitalize font-montserrat font-semibold text-[15px] text-secondary">
               WELCOME TO NXTZEN

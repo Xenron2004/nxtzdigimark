@@ -59,7 +59,7 @@ const Navbar = () => {
           {/* Links for large screens */}
           <div className="hidden lg:flex text-headingText items-center justify-between gap-5">
             <Link
-              href="/home"
+              href="/"
               className="font-medium font-montserrat transition hover:text-primary duration-300 ease-in-out text-headingText text-base leading-tight"
             >
               Home
@@ -143,12 +143,12 @@ const Navbar = () => {
           {/* Logo and Close Button */}
           <div className=" flex absolute w-full top-0 p-6 justify-between items-center">
             <div>
-              <Link href="/home" className="flex items-center">
+              <Link href="/" className="flex items-center">
                 <Image
                   src={logo}
                   width={100}
                   height={80}
-                  alt="Reevij Solutions Logo"
+                  alt="Nxtzengroup Logo"
                 />
               </Link>
             </div>
@@ -166,7 +166,7 @@ const Navbar = () => {
           >
             <div>
               <Link
-                href="/home"
+                href="/"
                 className="text-headingText font-montserrat font-medium text-[17px]"
               >
                 Home
