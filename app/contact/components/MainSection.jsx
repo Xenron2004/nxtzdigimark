@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import BgSection from "../../../public/assets/Bg_Sections.png";
 
@@ -17,12 +16,14 @@ const MainSection = () => {
       </div>
       <div className="relative z-10 text-center">
         <h1 className="text-[40px]  text-headingText font-montserrat font-medium  ">
-          ABOUT US
+          CONTACT US
         </h1>
-        <h2 className="font-montserrat text-[18px] text-headingText">Home {">"} About</h2>
+        <h2 className="font-montserrat text-[18px] text-headingText">
+          Home {">"} Contact
+        </h2>
       </div>
     </div>
   );
-}
+};
 
 export default MainSection;

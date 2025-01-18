@@ -14,6 +14,7 @@ export default {
         headingText: "#15141B",
         gradientStart: "rgba(112, 112, 112, 0.1)", // #707070 with 100% opacity
         gradientEnd: "rgba(255, 102, 37, 1)",    // #ff6625 with 100% opacity
+        customGray: 'rgba(244, 244, 244, 0.4)',
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to bottom, var(--tw-gradient-from), var(--tw-gradient-to))',

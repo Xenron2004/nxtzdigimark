@@ -47,7 +47,7 @@ const Navbar = () => {
         }`}
       >
         <div className="w-full max-w-7xl flex items-center justify-between">
-          <Link href="/home" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <Image
               src={logo}
               width={120}

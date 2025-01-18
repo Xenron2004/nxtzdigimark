@@ -11,12 +11,13 @@ import Products from "./components/Products";
 import Works from "./components/Works";
 import Reviews from "./components/Reviews";
 import Gallery from "./components/Gallery";
+import Link from "next/link";
 
 const Home = () => {
   return (
     <section className="flex flex-col items-center justify-center  gap-[100px]   ">
       {/* Hero section */}
-   
+
       <div className="flex flex-col gap-y-10   md:flex-row items-center max-w-7xl w-11/12 justify-between">
         {/* LEft section */}
         <div className="flex flex-col gap-5 mt-10 items-start md:max-w-[525px] w-full h-auto justify-center ">
@@ -45,9 +46,11 @@ const Home = () => {
           </p>
 
           {/* CTA Button */}
-          <button className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
-            GET IN TOUCH
-          </button>
+          <Link href="/contact">
+            <button className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
+              GET IN TOUCH
+            </button>
+          </Link>
         </div>
 
         {/* Right section  */}
@@ -55,15 +58,13 @@ const Home = () => {
           <Image src={HeroImg} alt="Nxtzen hero Image" />
         </div>
       </div>
-    
-      
 
       <Whyus />
       <Leading />
       <Products />
-      <Works/>
-      <Reviews/>
-      <Gallery/>
+      <Works />
+      <Reviews />
+      <Gallery />
     </section>
   );
 };
