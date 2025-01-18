@@ -7,7 +7,7 @@ import Gallery from "../home/components/Gallery";
 
 const About = () => {
   return (
-    <section className="flex-col mt-[90px] h-auto flex gap-[100px] items-center justify-be+">
+    <section className="flex-col mt-[90px] h-auto flex gap-[100px] items-center">
       <MainSection />
       <AboutNxt />
 
