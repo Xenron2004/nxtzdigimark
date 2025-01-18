@@ -9,14 +9,17 @@ const contactCardData = [
     heading: "Contact Us",
     bodyText:
       "Give us a call to explore the possibilities and start a meaningful partnership.",
-    links: [{ text: "Call: +1 234 567 890", url: "tel:+1234567890" }],
+    links: [
+      { text: "Call: +91 7337401777", url: "tel:+91 7337401777" },
+      { text: "+91 9059868677", url: "tel:+91 9059868677" },
+    ],
     iconBgColor: "",
   },
   {
     icon: <MdEmail size={20} color="#f36224" />, // Example icon
     heading: "Email Us",
     bodyText: "Connect with us easily through email communication",
-    links: [{ text: "info@example.com", url: "mailto:info@example.com" }],
+    links: [{ text: "team@nxtzengroup.com", url: "team@nxtzengroup.com" }],
     iconBgColor: "",
   },
   {
@@ -24,8 +27,14 @@ const contactCardData = [
     heading: "Visit Us",
     bodyText: "Visit our location for an up-close look at our offerings.",
     links: [
-      { text: "Rajahmundry Studio", url: "https//:www.goole.com" },
-      { text: "Vizag Studio", url: "https//:www.goole.com" },
+      {
+        text: "Vizag Studio",
+        url: " https://maps.app.goo.gl/22iJz3KNajmgYq8p6",
+      },
+      {
+        text: "Rajahmundry Studio",
+        url: "https://maps.app.goo.gl/ox1KsSv88prHXRPH7",
+      },
     ],
     iconBgColor: "",
   },

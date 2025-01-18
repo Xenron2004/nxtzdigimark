@@ -31,23 +31,22 @@ const AddressMap = () => {
       <div className="flex flex-col gap-10 ">
         <div className="flex flex-col gap-6">
           <h2 className="text-[24px] font-montserrat font-medium">
-            Head Office: Vizag Studio
+            Head Office: Rajahmundry Studio
           </h2>
           <p className="font-montserrat font-normal text-bodyText text-[16px] ">
-            TOSTEM Studio, 4th Floor, Chandu Central, D Mart Service Road, Near
-            Car Shed Junction ,Madhurawada, Visakhapatnam – 530041
+          TOSTEM Studio,2nd Floor, B.V.R.Enclave, Opp LIC, R.T.C.Complex Road, Morampudi, Rajahmundry -533101
           </p>
         </div>
         <div style={{ width: "100%", height: "500px" }}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3437.5833420951053!2d83.3525284!3d17.8079865!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b2eacc6c991%3A0x85b359e6cd125115!2sTOSTEM%20STUDIO%20-%20NXTZEN!5e1!3m2!1sen!2sin!4v1737200536579!5m2!1sen!2sin"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen={true}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3452.845964878331!2d81.79786109999999!3d16.9981944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDU5JzUzLjUiTiA4McKwNDcnNTIuMyJF!5e1!3m2!1sen!2sin!4v1737201704104!5m2!1sen!2sin"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen={true}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
         </div>
       </div>
     </section>

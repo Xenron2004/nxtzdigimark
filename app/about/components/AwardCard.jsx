@@ -95,7 +95,7 @@ export function AwardCard({ title, date, imageUrl, index, type = "award" }) {
           />
         </div>
       </div>
-      <h3 className="text-[20px] font-medium font-montserrat w-full tracking-[-1%] text-headingText text-start mt-7">
+      <h3 className="text-[18px] font-medium font-montserrat w-full tracking-[-1%] text-headingText text-start mt-7">
         {title}
       </h3>
       {type === "award" && (

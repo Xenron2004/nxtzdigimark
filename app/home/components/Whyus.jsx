@@ -5,6 +5,8 @@ import Why from "../../../public/assets/why_nxt.png";
 import Tostem from "../../../public/assets/partner_tostem.jpg";
 import German from "../../../public/assets/german_design.svg";
 import Design from "../../../public/assets/if_design.svg";
+import RedDot from "../../../public/awards/Red_Dot.png"
+import Red from "../../../public/awards/Red_award.png"
 
 const Whyus = () => {
   return (
@@ -76,7 +78,7 @@ const Whyus = () => {
           </div>
           <div className="grid grid-cols-3 gap-4">
             <Image src={German} alt="German Design Award" />
-            <Image src={German} alt="German Design Award" />
+            <Image src={Red} alt="German Design Award" />
             <Image
               src={Design}
               alt="iF Design Award 2021"

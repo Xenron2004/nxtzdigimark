@@ -9,7 +9,7 @@ const MainSection = () => {
           src={BgSection}
           alt="About Us Background"
           fill
-          className="object-cover"
+          className="object-cover w-full h-[300px]"
           priority
           quality={100}
         />
