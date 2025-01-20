@@ -147,6 +147,7 @@ import React from "react";
 import MainSection from "./components/MainSection";
 import Image from "next/image";
 import Link from "next/link";
+import PortfolioHead from "./components/PortfolioHead";
 
 const projects = [
   {
@@ -198,7 +199,7 @@ const Portfolio = () => {
     <section className="flex-col mt-[90px] h-auto flex gap-[100px] items-center">
       <MainSection />
       <div className="flex flex-col max-w-7xl w-11/12">
-        <div className="text-start flex items-center justify-center flex-col">
+        {/* <div className="text-start flex items-center justify-center flex-col">
           <h2 className="text-[15px] text-secondary font-semibold font-montserrat uppercase tracking-wider mb-2">
             PORTFOLIO
           </h2>
@@ -209,7 +210,9 @@ const Portfolio = () => {
             Browse through our portfolio of successful projects where quality
             meets precision in every design.
           </p>
-        </div>
+        </div> */}
+
+        <PortfolioHead/>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
           {projects.map((project) => (

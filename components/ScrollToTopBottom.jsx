@@ -32,7 +32,7 @@ export default function ScrollToTopBottom() {
     showButton && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-10 bg-primary cursor-pointer text-white p-3 shadow-lg transition-opacity duration-300  hover:opacity-100"
+        className="fixed bottom-5 right-5 bg-primary cursor-pointer text-white p-3 shadow-lg transition-opacity duration-300  hover:opacity-100"
         aria-label="Scroll to top"
       >
         <svg

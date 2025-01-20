@@ -5,8 +5,9 @@ import Why from "../../../public/assets/why_nxt.png";
 import Tostem from "../../../public/assets/partner_tostem.jpg";
 import German from "../../../public/assets/german_design.svg";
 import Design from "../../../public/assets/if_design.svg";
-import RedDot from "../../../public/awards/Red_Dot.png"
-import Red from "../../../public/awards/Red_award.png"
+import RedDot from "../../../public/awards/Red_Dot.png";
+import Red from "../../../public/awards/Red_award.png";
+import { motion } from "framer-motion";
 
 const Whyus = () => {
   return (
@@ -19,19 +20,43 @@ const Whyus = () => {
       {/* right section */}
       <div className="flex flex-col items-start justify-center ">
         <div>
-          <h2 className=" font-semibold uppercase font-montserrat text-[15px] tracking-wider text-secondary mb-4">
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className=" font-semibold uppercase font-montserrat text-[15px] tracking-wider text-secondary mb-4"
+          >
             WHY CHOOSE US
-          </h2>
-          <h1 className="text-[40px] font-montserrat  md:text-5xl font-normal text-headingText mb-6">
+          </motion.h2>
+          <motion.h1
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-[40px] font-montserrat  md:text-5xl font-normal text-headingText mb-6"
+          >
             Certified Quality and Award-Winning Solutions
-          </h1>
-          <p className="text-bodyText text-[16px] font-montserrat font-normal tracking-[-1%] ">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="text-bodyText text-[16px] font-montserrat font-normal tracking-[-1%] "
+          >
             Our innovative solutions, trusted certifications, and valued
             partnerships define our industry leadership
-          </p>
+          </motion.p>
         </div>
 
-        <div className=" border-gray-200 w-full pt-6">
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.8 }}
+          viewport={{ once: true }}
+          className=" border-gray-200 w-full pt-6"
+        >
           <div className="flex border-b-2  py-4 border-headingText items-center justify-between mb-3">
             <h3 className="text-[20px] text-primary font-montserrat font-medium tracking-[-1%]">
               Partners
@@ -41,9 +66,14 @@ const Whyus = () => {
           <div className="mb-8">
             <Image src={Tostem} alt="tostem partner" />
           </div>
-        </div>
+        </motion.div>
 
-        <div className=" border-gray-200 w-full ">
+        <motion.div 
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.9 }}
+        viewport={{ once: true }}
+        className=" border-gray-200 w-full ">
           <div className="flex border-b-2 py-4 border-headingText items-center justify-between mb-6">
             <h3 className="text-[20px] text-primary  font-montserrat font-medium tracking-[-1%]">
               Certifications
@@ -67,9 +97,14 @@ const Whyus = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
-        <div className=" border-gray-200 w-full pt-6">
+        <motion.div 
+         initial={{ opacity: 0, y: -30 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.7, delay: 1.0 }}
+         viewport={{ once: true }}
+        className=" border-gray-200 w-full pt-6">
           <div className="flex border-b-2 py-4 border-headingText items-center justify-between mb-6">
             <h3 className="text-[20px] text-primary  font-montserrat font-medium tracking-[-1%]">
               Awards & Recognitions
@@ -85,7 +120,7 @@ const Whyus = () => {
               className="h-24 object-contain"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

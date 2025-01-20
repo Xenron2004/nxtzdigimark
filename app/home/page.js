@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Hero from "./components/Hero";
 import HeroImg from "../../public/assets/Hero_nxt.png";
@@ -12,6 +13,7 @@ import Works from "./components/Works";
 import Reviews from "./components/Reviews";
 import Gallery from "./components/Gallery";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -23,33 +25,59 @@ const Home = () => {
         <div className="flex flex-col gap-5 mt-10 items-start md:max-w-[525px] w-full h-auto justify-center ">
           {/* heading & small text */}
           <div className="flex flex-col gap-3 ">
-            <p className=" capitalize font-montserrat font-semibold text-[15px] text-secondary">
+            <motion.p
+             initial={{ opacity: 0, y: 50 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.4, delay: 0.4 }}
+             viewport={{ once: true }}
+            className=" capitalize font-montserrat font-semibold text-[15px] text-secondary">
               WELCOME TO NXTZEN
-            </p>
-            <h1 className="font-montserrat max-w-[525px] text-[56px] text-start text-headingText font-medium leading-[72px]">
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="font-montserrat max-w-[525px] text-[56px] text-start text-headingText font-medium leading-[72px]"
+            >
               Innovative Ideas Stylish Designs
-            </h1>
+            </motion.h1>
           </div>
 
           {/* Japanese innovation text */}
-          <h3 className="font-montserrat max-w-[240px] tracking-[-1%]  w-full text-[22px] font-semibold text-start text-secondary ">
+          <motion.h3
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.6, delay: 0.6 }}
+           viewport={{ once: true }}
+          className="font-montserrat max-w-[240px] tracking-[-1%]  w-full text-[22px] font-semibold text-start text-secondary ">
             Japanese <span className="font-medium"> Innovation </span>
             <span className="font-medium"> in Window</span> Design
-          </h3>
+          </motion.h3>
 
           {/* paragraph text */}
-          <p className="max-w-[511px] w-full font-montserrat tracking-[2%] leading-[25px] font-normal text-bodyText text-[17px]">
+          <motion.p
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 0.6, delay: 0.6 }}
+           viewport={{ once: true }}
+          className="max-w-[511px] w-full font-montserrat tracking-[2%] leading-[25px] font-normal text-bodyText text-[17px]">
             We are a leading lifestyle brand, offering innovative, sustainable
             housing solutions that elevate customer lifestyles with high-quality
             fenestration products, cutting-edge technology, and client-focused
             services.
-          </p>
+          </motion.p>
 
           {/* CTA Button */}
           <Link href="/contact">
-            <button className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
+            <motion.button
+             initial={{ opacity: 0, y: -30 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             transition={{ duration: 0.6, delay: 0.4 }}
+             viewport={{ once: true }}
+            className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
               GET IN TOUCH
-            </button>
+            </motion.button>
           </Link>
         </div>
 
