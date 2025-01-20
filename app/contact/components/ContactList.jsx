@@ -54,7 +54,7 @@ const contactCardData = [
 
 const ContactList = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl w-full gap-y-6 items-center justify-between">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 max-w-7xl w-full gap-y-6 items-center justify-between">
       <div className="flex flex-col items-start bg-customGray gap-4 text-start w-full p-6 max-w-[413px] h-full max-h-[180px] bg-bgCard transition-all duration-300">
         <div className="flex items-center justify-between gap-8">
           <div

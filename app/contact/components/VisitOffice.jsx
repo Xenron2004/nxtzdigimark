@@ -3,7 +3,8 @@ import AddressMap from "./AddressMap";
 
 const VisitOffice = () => {
   return (
-    <section className="flex flex-col items-start max-w-7xl w-11/12 justify-start gap-[100px]">
+    <section className="flex flex-col items-start max-w-7xl w-full
+     justify-start gap-[100px]">
       {/* Stay in touch section */}
       <div className="flex flex-col max-w-7xl w-full gap-14 items-start justify-start">
         <div className="flex flex-col gap-6 items-start max-w-7xl justify-start w-full ">

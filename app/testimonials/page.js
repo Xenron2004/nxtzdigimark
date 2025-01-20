@@ -435,6 +435,7 @@ const Testimonials = () => {
               <p className="font-montserrat text-gray-700 leading-relaxed">
                 {testimonial.review}
               </p>
+              
             </motion.div>
           ))}
         </motion.div>
