@@ -65,10 +65,10 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/solutions"
+              href="/products"
               className="font-medium transition hover:text-primary duration-300 ease-in-out font-montserrat text-headingText text-base leading-tight"
             >
-              Solutions
+              Products
             </Link>
             <Link
               href="/portfolio"
@@ -77,10 +77,10 @@ const Navbar = () => {
               Portfolio
             </Link>
             <Link
-              href="/pricings"
+              href="/portfolio"
               className="font-medium font-montserrat transition hover:text-primary duration-300 ease-in-out text-headingText text-base leading-tight"
             >
-              Pricings
+              Gallery
             </Link>
             <Link
               href="/about"
@@ -190,7 +190,7 @@ const Navbar = () => {
             </div>
             <div>
               <Link
-                href="/pricings"
+                href="/portfolio"
                 className="text-headingText font-montserrat font-medium text-[17px]"
               >
                 Gallery
@@ -212,9 +212,9 @@ const Navbar = () => {
               onClick={() => {
                 window.location.href = "/contact"; // Replace with your desired path
               }}
-              className="md:max-w-[216px] font-montserrat h-[45px] bg-primary font-medium flex items-center justify-center text-white w-full py-6 px-6"
+              className="md:max-w-[216px] uppercase font-montserrat h-[45px] bg-primary font-medium flex items-center justify-center text-white w-full py-6 px-6"
             >
-              Let's Talk!
+              Contact Us
             </button>
           </div>
         </div>

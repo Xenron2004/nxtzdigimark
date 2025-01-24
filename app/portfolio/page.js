@@ -103,51 +103,14 @@
 // export default Portfolio;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"use client";
+// "use client";
 
 import React from "react";
 import MainSection from "./components/MainSection";
 import Image from "next/image";
 import Link from "next/link";
 import PortfolioHead from "./components/PortfolioHead";
+import AnimatedProjectGrid from "./components/AnimatedProjectGrid";
 
 const projects = [
   {
@@ -214,7 +177,7 @@ const Portfolio = () => {
 
         <PortfolioHead/>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
           {projects.map((project) => (
             <Link href={`/portfolio/${project.slug}`} key={project.id}>
               <div className="group relative overflow-hidden cursor-pointer">
@@ -238,7 +201,9 @@ const Portfolio = () => {
               </div>
             </Link>
           ))}
-        </div>
+        </div> */}
+
+        <AnimatedProjectGrid projects={projects} />
       </div>
     </section>
   );
