@@ -33,6 +33,7 @@ const products = [
       "Our sliding windows provide a seamless blend of modern aesthetics and robust functionality, perfect for contemporary spaces.",
     availableDesigns: "Sliding Windows, Casement Windows, French Windows,Awning Windows",
     series: "Grants, ATIS, We Plus, We 70",
+    link: "/Aluminium-windows", // Add the link to the page
   },
   {
     imageSrc: Facades,
