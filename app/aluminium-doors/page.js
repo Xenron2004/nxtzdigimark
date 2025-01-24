@@ -2,6 +2,8 @@ import React from 'react'
 import MainSection from './MainSection'
 import AboutDoors from './components/AboutDoors'
 import DesignDetails from './components/DesignDetails'
+import ProductListing from './components/ProductsCard'
+import AvSeries from './components/AvSeries'
 
 const AluminiumDoors = () => {
   return (
@@ -11,6 +13,8 @@ const AluminiumDoors = () => {
         
     <AboutDoors/>
     <DesignDetails/>
+    {/* <ProductListing/> */}
+    <AvSeries/>
     </div>
    
    </section>

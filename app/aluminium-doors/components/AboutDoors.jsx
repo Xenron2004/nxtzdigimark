@@ -12,6 +12,7 @@ import Japanese from "../../products/assets/japanese.webp";
 import Preengineered from "../../products/assets/pre-engineered.webp";
 import Window from "../../products/assets/windowbox.webp";
 
+
 const features = [
   {
     icon: Textguard,
@@ -131,7 +132,7 @@ const AboutDoors = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featured.map((feature, index) => (
                 <FeatureCard
                   key={index}
@@ -141,6 +142,7 @@ const AboutDoors = () => {
                 />
               ))}
             </div>
+      
     </section>
   );
 };
