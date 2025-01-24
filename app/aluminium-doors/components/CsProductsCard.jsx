@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { seriesData } from "../constants/ProductsData";
+import { casementSeriesData} from "../constants/ProductsData";
 
 const ProductCard = ({ product }) => {
   return (
@@ -33,10 +33,10 @@ const ProductCard = ({ product }) => {
   );
 };
 
-const ProductListing = () => {
+const CsProductsCard = () => {
   const [selectedSeries, setSelectedSeries] = useState("ATIS");
 
-  const currentSeries = seriesData.find(
+  const currentSeries = casementSeriesData.find(
     (series) => series.series === selectedSeries
   );
 
@@ -44,7 +44,7 @@ const ProductListing = () => {
     <div className="max-w-[1280px]  w-full  py-8">
       {/* Series Tabs */}
       <div className="flex gap-4 justify-center mb-8">
-        {seriesData.map((series) => (
+        {casementSeriesData.map((series) => (
           <button
             key={series.series}
             className={`px-4 md:px-6 py-2 font-medium font-montserrat text-[16px]  ${
@@ -69,4 +69,4 @@ const ProductListing = () => {
   );
 };
 
-export default ProductListing;
+export default CsProductsCard;

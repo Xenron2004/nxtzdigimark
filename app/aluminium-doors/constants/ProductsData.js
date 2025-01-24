@@ -15,7 +15,24 @@ import SlWeThreePThreeT from "../assets/sl_3p_3t.png";
 import SlWepTwoPTwoT from "../assets/sl_wep2p2t.png";
 import SlWepFourPTwoT from "../assets/sl_wep4p2t.png";
 import SlWepThreePThreeT from "../assets/sl_wep3p3t.png";
+import CsAtSwing from "../assets/cs_atswingwep.png";
+import CsGrSwing from "../assets/cs_groutswing.png";
+import CsWeSwing from "../assets/cs_weinswing.png";
+import CsWepSwing from "../assets/cs_wepinswing.png";
+import FrWeSwing from "../assets/fr_weswing.png";
+import FrWepInSwing from "../assets/fr_wepinwing.png";
+import FrWepOut from "../assets/fr_wepout.png";
+import FrWeOutSwing from "../assets/fr_weoutswing.png";
+import FoTwelve from "../assets/fo_12.png"
+import FoSix from "../assets/fo_6.png"  
+import FoEight from "../assets/fo_8.png"
+import FoFour from "../assets/fo_4.png"
 
+
+
+
+
+// FOR ALUMINIUM SLIDING DOORS
 export const seriesData = [
   {
     series: "ATIS",
@@ -44,20 +61,20 @@ export const seriesData = [
         imageSrc: AtSixPThreeT,
         title: "Sliding Door (6 Panels on 3 Tracks)",
         details: {
-            "Frame Depth": "104 mm",
-            "Height of Sill": "50 mm",
-            "Glass Thickness": "upto 13.5 mm",
-            "Maximum Height of Door": "3045 mm",
+          "Frame Depth": "104 mm",
+          "Height of Sill": "50 mm",
+          "Glass Thickness": "upto 13.5 mm",
+          "Maximum Height of Door": "3045 mm",
         },
       },
       {
         imageSrc: AtThreePThreeT,
         title: "Sliding Door (3 Panels on 3 Tracks)",
         details: {
-            "Frame Depth": "104 mm",
-            "Height of Sill": "35 mm",
-            "Glass Thickness": "upto 13.5 mm",
-            "Maximum Height of Door": "3045 mm",
+          "Frame Depth": "104 mm",
+          "Height of Sill": "35 mm",
+          "Glass Thickness": "upto 13.5 mm",
+          "Maximum Height of Door": "3045 mm",
         },
       },
     ],
@@ -79,30 +96,30 @@ export const seriesData = [
         imageSrc: SlGrSixPThreeT,
         title: "6 Panels on 3 Tracks Grants Sliding Door",
         details: {
-            "Frame Depth": "101.6 mm, 120 mm, 178 mm",
-            "Height of Sill": "50 mm",
-            "Glass Thickness": "Up to 31.5 mm",
-            "Maximum Height of Door": "3420 mm",
+          "Frame Depth": "101.6 mm, 120 mm, 178 mm",
+          "Height of Sill": "50 mm",
+          "Glass Thickness": "Up to 31.5 mm",
+          "Maximum Height of Door": "3420 mm",
         },
       },
       {
         imageSrc: SlGrThreePTwoT,
         title: "Sliding Door(3 Panels on 2 Tracks)SFS",
         details: {
-            "Frame Depth": "101.6 mm, 120 mm, 178 mm",
-            "Height of Sill": "50 mm",
-            "Glass Thickness": "Up to 31.5 mm",
-            "Maximum Height of Door": "2250 mm",
+          "Frame Depth": "101.6 mm, 120 mm, 178 mm",
+          "Height of Sill": "50 mm",
+          "Glass Thickness": "Up to 31.5 mm",
+          "Maximum Height of Door": "2250 mm",
         },
       },
       {
         imageSrc: SlGrFourPTwoT,
         title: "Sliding Door(4 Panels on 2 Tracks)",
         details: {
-            "Frame Depth": "104 mm",
-            "Height of Sill": "50 mm",
-            "Glass Thickness": "Up to 13.5 mm",
-            "Maximum Height of Door": "3500 mm",
+          "Frame Depth": "104 mm",
+          "Height of Sill": "50 mm",
+          "Glass Thickness": "Up to 13.5 mm",
+          "Maximum Height of Door": "3500 mm",
         },
       },
     ],
@@ -188,3 +205,190 @@ export const seriesData = [
     ],
   },
 ];
+
+// FOR ALUMINIUM CASEMENT DOORS
+
+export const casementSeriesData = [
+  {
+    series: "ATIS",
+    products: [
+      {
+        imageSrc: CsAtSwing,
+        title: "In-Swing Sing Door WE-Plus",
+        details: {
+          "Frame Depth": "72 mm(2 tracks sliding), 104 mm(3 tracks sliding)",
+          "Height of Sill": "35 mm",
+          "Glass Groove": "11 mm",
+          "Glass Thickness": "5/6/8 mm",
+          "Maximum Height of Door-Standard Type": "3200 mm",
+        },
+      },
+    ],
+  },
+
+  {
+    series: "GRANTS",
+    products: [
+      {
+        imageSrc: CsGrSwing,
+        title: "Out-Swing Door(Single) ",
+        details: {
+          "Wind Pressure": "2000 Pa",
+          "Frame Depth": "101.6 mm",
+          "Glass Thickness": "31.5 mm",
+          "Height of Sill": "50 mm",
+          "Maximum Height of Door-Standard Type Door": "3000 mm",
+        },
+      },
+    ],
+  },
+
+  {
+    series: "WE 70",
+    products: [
+      {
+        imageSrc: CsWeSwing,
+        title: "In-Swing Door (Single)",
+        details: {
+          "Frame Depth": "72 mm",
+          "Height of Sill": "35 mm",
+          "Glass Groove": "11 mm",
+          "Glass Thickness": "5,6,8 mm",
+          "Maximum Height of Door-Standard type": "2400 mm",
+        },
+      },
+    ],
+  },
+
+  {
+    series: "WE PLUS",
+    products: [
+      {
+        imageSrc: CsWepSwing,
+        title: "In-Swing Door Sing WE-Plus",
+        details: {
+          "Frame Depth": "72 mm(2 tracks sliding), 104 mm(3 tracks sliding)",
+          "Height of Sill": "35 mm",
+          "Glass Groove": "11 mm",
+          "Glass Thickness": "5/6/8 mm",
+          "Maximum Height of Door-Standard Type": "3200 mm",
+        },
+      },
+    ],
+  },
+];
+
+export const frenchSeriesData = [
+  {
+    series: "WE 70",
+    products: [
+      {
+        imageSrc: FrWeSwing,
+        title: "In-Swing Door (Single)",
+        details: {
+          "Frame Depth": "72 mm",
+          "Height of Sill": "35 mm",
+          "Glass Groove": "11 mm",
+          "Glass Thickness": "Up to 13.5 mm",
+          "Maximum Height of Door-Standard type": "3200 mm",
+        },
+      },
+      {
+        imageSrc: FrWeOutSwing,
+        title: "Out-Swing Door (Double)",
+        details: {
+          "Frame Depth": "72 mm",
+          "Height of Sill": "35 mm",
+
+          "Glass Thickness": "Up to 13.5 mm",
+          "Maximum Height of Door-Standard type": "3200 mm",
+        },
+      },
+    ],
+  },
+
+  {
+    series: "WE PLUS",
+    products: [
+      {
+        imageSrc: FrWepInSwing,
+        title: "In-Swing Door (Double)",
+        details: {
+          "Frame Depth": "72 mm",
+          "Height of Sill": "35 mm",
+          "Glass Groove": "11 mm",
+          "Glass Thickness": "Up to 13.5 mm",
+          "Maximum Height of Door-Standard Type": "3200 mm",
+        },
+      },
+      {
+        imageSrc: FrWepOut,
+        title: "Out-Swing Door (Double)",
+        details: {
+          "Frame Depth": "72 mm",
+          "Height of Sill": "35 mm",
+          
+          "Glass Thickness": "Up to 13.5 mm",
+          "Maximum Height of Door-Standard Type": "3200 mm",
+        },
+      },
+    
+    ],
+  },
+];
+
+
+// Folding Doors
+export const foldingSeriesData = [
+    {
+        series: "WE 70",
+        products: [
+          {
+            imageSrc: FoTwelve,
+            title: "Folding Door (12,16 Panels)",
+            details: {
+              "Minimum Width of Door": "72 mm",
+              "Minimum Height of Door": "35 mm",
+              "Maximum width of Door": "11 mm",
+              "Maximum Height of Door": "Up to 13.5 mm",
+              "Height of Sill": "3030 mm",
+              "Glass Thickness": "5/6/8 mm",
+              "Frame Depth": "72 mm",
+            },
+          },
+          {
+            imageSrc: FoEight,
+            title: "Folding Door (8 Panels)",
+            details: {
+              "Frame Depth": "72 mm, 104 mm",
+              "Height of Sill": "35 mm",
+               "Glass Groove": "11 mm",
+              "Glass Thickness": "5/6/8 mm",
+              "Maximum Height of Door-Standard type": "3030 mm",
+            },
+          },
+          {
+            imageSrc: FoSix,
+            title: "Folding Door (6 Panels)",
+            details: {
+              "Frame Depth": "72 mm, 104 mm",
+              "Height of Sill": "35 mm",
+               "Glass Groove": "11 mm",
+              "Glass Thickness": "5/6/8 mm",
+              "Maximum Height of Door-Standard type": "3030 mm",
+            },
+          },
+          {
+            imageSrc: FoFour,
+            title: "Folding Door (4 Panels)",
+            details: {
+              "Frame Depth": "72 mm, 104 mm",
+              "Height of Sill": "35 mm",
+               "Glass Groove": "11 mm",
+              "Glass Thickness": "5/6/8 mm",
+              "Maximum Height of Door-Standard type": "3030 mm",
+            },
+          },
+        ],
+      },
+]
