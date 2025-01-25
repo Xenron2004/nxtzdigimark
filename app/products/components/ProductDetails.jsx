@@ -3,7 +3,7 @@ import OurProducts from "./OurProducts";
 import AluminiumDoors from "../assets/Aldoors.webp";
 import AlWindows from "../assets/aluminium_windows.webp";
 import Entrance from "../assets/Entrance_doors.webp";
-import Facades from "../assets/Facades.webp";
+import Facadess from "../assets/Facades.webp";
 import Interior from "../assets/Interio.webp";
 
 const products = [
@@ -23,25 +23,27 @@ const products = [
     heading: "Entrance Doors",
     description:
       "Enhance your space with French windows that combine elegant design with superior ventilation and lighting.",
-    availableDesigns: "Giesta Doors, Giesta with Ventiation",
+    availableDesigns: "Giesta Doors, Giesta with Ventilation",
     series: "GIESTA Design Simulation",
+    link: "/entrance-doors",
   },
   {
     imageSrc: AlWindows,
     heading: "Aluminium Windows",
     description:
       "Our sliding windows provide a seamless blend of modern aesthetics and robust functionality, perfect for contemporary spaces.",
-    availableDesigns: "Sliding Windows, Casement Windows, French Windows,Awning Windows",
+    availableDesigns:
+      "Sliding Windows, Casement Windows, French Windows,Awning Windows",
     series: "Grants, ATIS, We Plus, We 70",
     link: "/Aluminium-windows", // Add the link to the page
   },
   {
-    imageSrc: Facades,
+    imageSrc: Facadess,
     heading: "Facades",
     description:
       "Enhance your space with French windows that combine elegant design with superior ventilation and lighting.",
-    availableDesigns: "Curtain Wall Facades, Store Front Facades",  
-    
+    availableDesigns: "Curtain Wall Facades, Store Front Facades",
+    link: "/facades"
   },
   {
     imageSrc: Interior,
@@ -49,7 +51,7 @@ const products = [
     description:
       "Enhance your space with French windows that combine elegant design with superior ventilation and lighting.",
     availableDesigns: "Classic, Double Glazed, Triple Glazed",
-  
+    link:"/interior"
   },
 ];
 

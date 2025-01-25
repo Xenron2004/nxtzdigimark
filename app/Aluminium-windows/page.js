@@ -17,17 +17,6 @@ import FrWindowSeries from "./components/FrWindowSeries";
 import TsDesignDetails from "./components/TsDesignDetails";
 import SlitDesignDetails from "./components/SlitDesignDetails";
 import VertDesignDetails from "./components/VertDesignDetails";
-// import ProductListing from './components/ProductsCard'
-// import AvSeries from './components/AvSeries'
-// import CsSeries from './components/CsSeries'
-// import CsDetails from './components/CsDetails'
-// import FrDetails from './components/FrDetails'
-// import FrSeries from './components/FrSeries'
-// import FoldDetails from './components/FoldDetails'
-// import FoldSeries from './components/FoldSeries'
-// import VentDetails from './components/VentDetails'
-// import CorDetails from './components/CorDetails'
-// import SlideDetails from './components/SlideDetails'
 
 const AluminiumWindows = () => {
   return (

@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer"
 import SmoothScroll from "@/components/SmoothScroll";
 import ScrollToTopBottom from "@/components/ScrollToTopBottom";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
+import DownloadBrochure from "@/components/DownloadBrochure";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +33,8 @@ export default function RootLayout({ children }) {
        <main>{children}</main> 
        <Footer/>
        <ScrollToTopBottom />
+       <WhatsAppIcon/>
+       <DownloadBrochure/>
        </SmoothScroll>
       </body>
     </html>
