@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { slidingSeriesData } from "../constants/ProductsData";
+import { casementSeriesData } from "../constants/ProductsData";
 
 const ProductCard = ({ product }) => {
   return (
@@ -38,9 +38,9 @@ const ProductCard = ({ product }) => {
 };
 
 const CsWindowProductCard = () => {
-  const [selectedSeries, setSelectedSeries] = useState("WE 70");
+  const [selectedSeries, setSelectedSeries] = useState("ATIS");
 
-  const currentSeries = slidingSeriesData.find(
+  const currentSeries = casementSeriesData.find(
     (series) => series.series === selectedSeries
   );
 
@@ -48,7 +48,7 @@ const CsWindowProductCard = () => {
     <div className="max-w-[1280px]  w-full  py-8">
       {/* Series Tabs */}
       <div className="flex gap-4 justify-center mb-8">
-        {slidingSeriesData.map((series) => (
+        {casementSeriesData.map((series) => (
           <button
             key={series.series}
             className={`px-4 md:px-6 py-2 font-medium font-montserrat text-[16px]  ${

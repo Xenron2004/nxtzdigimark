@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import AboutProductsImage from "../assets/products_about.webp";
 import Image from "next/image";
 import Textguard from "../assets/textguard.svg";
@@ -126,9 +127,11 @@ const AboutProduct = () => {
           </motion.div>
 
           {/* CTA Button */}
+          <Link href="/contact">
           <button className="font-montserrat mt-[8px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
             CONTACT
           </button>
+          </Link>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

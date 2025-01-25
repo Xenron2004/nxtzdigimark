@@ -27,6 +27,7 @@ import FoTwelve from "../assets/fo_12.png"
 import FoSix from "../assets/fo_6.png"  
 import FoEight from "../assets/fo_8.png"
 import FoFour from "../assets/fo_4.png"
+import Slgr2p2t from "../assets/sl_gr2p2t.png"
 
 
 
@@ -122,6 +123,16 @@ export const seriesData = [
           "Maximum Height of Door": "3500 mm",
         },
       },
+      {
+        imageSrc: Slgr2p2t,
+        title: "Sliding Door(2 Panels on 2 Tracks Grants)",
+        details: {
+          "Frame Depth": "101.6 mm, 120 mm(2 Tracks sliding), 178 mm(3 tracks sliding)",
+          "Height of Sill": "50 mm",
+          "Glass Thickness": "Up to 31.5 mm",
+          "Maximum Height of Door": "3500 mm",
+        },
+      },
     ],
   },
   {
@@ -194,7 +205,7 @@ export const seriesData = [
       },
       {
         imageSrc: SlWeFourPTwoT,
-        title: "Sliding Doors (6 Panels on 3 Tracks)",
+        title: "Sliding Doors (4 Panels on 2 Tracks)",
         details: {
           "Frame Depth": "104 mm",
           "Height of Sill": "50 mm",
@@ -278,13 +289,15 @@ export const casementSeriesData = [
   },
 ];
 
+
+// FRENCH DOORS DATA
 export const frenchSeriesData = [
   {
     series: "WE 70",
     products: [
       {
         imageSrc: FrWeSwing,
-        title: "In-Swing Door (Single)",
+        title: "In-Swing Door (Double)",
         details: {
           "Frame Depth": "72 mm",
           "Height of Sill": "35 mm",
@@ -347,11 +360,11 @@ export const foldingSeriesData = [
             imageSrc: FoTwelve,
             title: "Folding Door (12,16 Panels)",
             details: {
-              "Minimum Width of Door": "72 mm",
-              "Minimum Height of Door": "35 mm",
-              "Maximum width of Door": "11 mm",
-              "Maximum Height of Door": "Up to 13.5 mm",
-              "Height of Sill": "3030 mm",
+              "Minimum Width of Door": "6001 mm",
+              "Minimum Height of Door": "650 mm",
+              "Maximum width of Door": "10335 mm(For 12 Panels), 12000 mm(For 16 Panels)",
+              "Maximum Height of Door": "3030 mm",
+              "Height of Sill": "35 mm",
               "Glass Thickness": "5/6/8 mm",
               "Frame Depth": "72 mm",
             },
@@ -360,7 +373,7 @@ export const foldingSeriesData = [
             imageSrc: FoEight,
             title: "Folding Door (8 Panels)",
             details: {
-              "Frame Depth": "72 mm, 104 mm",
+              "Frame Depth": "72 mm(2 Tracks Sliding), 104 mm(3 tracks sliding)",
               "Height of Sill": "35 mm",
                "Glass Groove": "11 mm",
               "Glass Thickness": "5/6/8 mm",
@@ -371,7 +384,7 @@ export const foldingSeriesData = [
             imageSrc: FoSix,
             title: "Folding Door (6 Panels)",
             details: {
-              "Frame Depth": "72 mm, 104 mm",
+              "Frame Depth": "72 mm(2 Tracks Sliding), 104 mm(3 tracks sliding)",
               "Height of Sill": "35 mm",
                "Glass Groove": "11 mm",
               "Glass Thickness": "5/6/8 mm",
@@ -382,7 +395,7 @@ export const foldingSeriesData = [
             imageSrc: FoFour,
             title: "Folding Door (4 Panels)",
             details: {
-              "Frame Depth": "72 mm, 104 mm",
+              "Frame Depth": "72 mm(2 Tracks Sliding), 104 mm(3 tracks sliding)",
               "Height of Sill": "35 mm",
                "Glass Groove": "11 mm",
               "Glass Thickness": "5/6/8 mm",

@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import LeadingImg from "../../../public/assets/leading_img.png"
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Leading = () => {
   return (
@@ -21,9 +22,9 @@ const Leading = () => {
         transition={{ duration: 0.6, delay: 0.6 }}
         viewport={{ once: true }}
         className="font-montserrat text-bodyText font-normal text-[16px] tracking-[-1%] leading-[25.5px]">
-          Nxtzen products are developed to withstand the harshest weather
+          Our products are developed to withstand the harshest weather
           conditions, setting new quality benchmarks and yardsticks in the
-          industry, which is what makes Nxtzen a leading name in home solutions
+          industry, which is what makes us a leading name in home solutions
           around the world.
         </motion.p>
         </div>
@@ -55,8 +56,10 @@ const Leading = () => {
          viewport={{ once: true }}
         className="font-montserrat font-semibold text-[16px] trackign-[-1%] text-primary">Parented 'TEXTGUARD' Technology</motion.h4>
         </div>
-        
+        <Link  href="/about">
+       
         <button className="font-montserrat max-w-[150px] mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">ABOUT US</button>
+        </Link>
       </div>
 
       {/* right section */}

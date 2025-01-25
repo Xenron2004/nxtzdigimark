@@ -2,6 +2,27 @@
 
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import aldoor from "../assets/aldoorsfive.webp";
+import aldoors from "../assets/aldoorsfour.webp";
+import aldoorsone from "../assets/aldoorsthree.webp";
+import aldoorsfour from "../assets/aldoorstwo.webp";
+import Image from "next/image";
+import facadesone from "../assets/facadesone.webp";
+import facadestwo from "../assets/facadestwo.webp";
+import facadesthree from "../assets/facadesthree.webp";
+import facadesfour from "../assets/facadesfour.webp";
+import alwindows from "../assets/alwindowsone.webp";
+import alwindowsone from "../assets/alwindowstwo.webp";
+import alwindowstwo from "../assets/alwindowsthree.webp";
+import alwindowsthree from "../assets/alwindowsfour.webp";
+import interone from "../assets/interone.webp"
+import intertwo from "../assets/intertwo.webp"
+import interthree from "../assets/interthree.webp"
+import interfour from "../assets/interfour.webp"
+import entranceone from "../assets/entranceone.webp"
+import entrancetwo from "../assets/entrancetwo.webp"
+import entrancethree from "../assets/entrancethree.webp"
+import entrancefour from "../assets/entrancefour.webp"
 
 const productCategories = [
   {
@@ -12,99 +33,166 @@ const productCategories = [
       {
         id: 1,
         name: "Grants",
-        image: "https://images.unsplash.com/photo-1530268729831-4b0b9e170218",
-        description: "Grants is TOSTEM's Flagship series. Its innovative design results in...",
+        image: aldoor,
+        description:
+          "Grants is TOSTEM's Flagship series. Its innovative design results in...",
       },
       {
         id: 2,
-        name: "Tostem+Aluk",
-        image: "https://images.unsplash.com/photo-1449844908441-8829872d2607",
+        name: "ATIS",
+        image: aldoors,
         description: "Premium quality aluminium doors for modern homes...",
       },
       {
         id: 3,
         name: "We70",
-        image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205",
+        image: aldoorsone,
         description: "Contemporary design meets functionality...",
       },
       {
         id: 4,
         name: "We Plus",
-        image: "https://images.unsplash.com/photo-1506377295352-e3154d43ea9e",
-        description: "Sleek Design which fulfills the needs of modern architect without...",
+        image: aldoorsfour,
+        description:
+          "Sleek Design which fulfills the needs of modern architect without...",
       },
     ],
   },
   {
     id: "aluminium-windows",
-    title: "Facades",
+    title: "Aluminium Facades",
     products: [
       {
         id: 5,
-        name: "Premium Windows",
-        image: "https://images.unsplash.com/photo-1509644851345-3f82e5eaac86",
-        description: "High-end aluminium windows with superior insulation...",
+        name: "Premium Facade",
+        image: facadesone,
+        description:
+          "High-quality aluminium facades designed for modern architecture with excellent weather resistance and energy efficiency.",
       },
-      // Add more window products...
-    ],
-  },
-  {
-    id: "facades",
-    title: "Aluminium windows",
-    products: [
       {
-        id: 9,
-        name: "Modern Facades",
-        image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625",
-        description: "Contemporary facade solutions for modern architecture...",
+        id: 6,
+        name: "Stylish Facade",
+        image: facadestwo,
+        description:
+          "Elegant aluminium facades offering durability, insulation, and a sleek aesthetic for contemporary designs.",
+      },
+      {
+        id: 7,
+        name: "Durable Facade",
+        image: facadesthree,
+        description:
+          "Robust aluminium facades crafted for long-lasting performance and optimal thermal efficiency.",
+      },
+      {
+        id: 8,
+        name: "Modern Facade",
+        image: facadesfour,
+        description:
+          "Advanced aluminium facades combining style, functionality, and superior insulation for cutting-edge projects.",
       },
       // Add more facade products...
     ],
   },
+
+  {
+    id: "facades",
+    title: "Aluminium Windows",
+    products: [
+      {
+        id: 9,
+        name: "Sleek Aluminium Windows",
+        image: alwindows,
+        description:
+          "Elegant aluminium windows designed for superior natural lighting and modern aesthetics.",
+      },
+      {
+        id: 10,
+        name: "Durable Aluminium Windows",
+        image: alwindowsone,
+        description:
+          "Robust aluminium windows offering exceptional weather resistance and thermal efficiency.",
+      },
+      {
+        id: 11,
+        name: "Energy-Efficient Aluminium Windows",
+        image: alwindowstwo,
+        description:
+          "Advanced aluminium windows engineered for optimal energy efficiency and durability.",
+      },
+      {
+        id: 12,
+        name: "Stylish Aluminium Windows",
+        image: alwindowsthree,
+        description:
+          "Modern aluminium windows combining style, performance, and functionality.",
+      },
+      // Add more aluminium window products...
+    ],
+  },
+
   {
     id: "internal-partitions",
     title: "Internal Partitions",
     products: [
       {
         id: 13,
-        name: "Office Partitions",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c",
-        description: "Elegant internal partitions for office spaces...",
+        name: "Sleek Office Partitions",
+        image: interone,
+        description: "Modern internal partitions designed to optimize space while maintaining privacy and aesthetics.",
       },
       {
         id: 14,
-        name: "Office Partitions",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c",
-        description: "Elegant internal partitions for office spaces...",
+        name: "Customizable Office Partitions",
+        image: intertwo,
+        description: "Elegant and customizable partitions for office spaces, providing flexibility and style.",
       },
       {
         id: 15,
-        name: "Office Partitions",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c",
-        description: "Elegant internal partitions for office spaces...",
+        name: "Durable Office Partitions",
+        image: interthree,
+        description: "High-quality internal partitions built for durability and designed for contemporary workspaces.",
       },
       {
         id: 16,
-        name: "Office Partitions",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c",
-        description: "Elegant internal partitions for office spaces...",
+        name: "Stylish Office Partitions",
+        image: interfour,
+        description: "Stylish and functional office partitions to create modern and organized environments.",
       },
       // Add more partition products...
     ],
   },
+
   {
     id: "entrance-doors",
     title: "Entrance Doors",
     products: [
       {
         id: 17,
-        name: "Grand Entrance",
-        image: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205",
-        description: "Make a statement with our grand entrance doors...",
+        name: "Elegant Entrance Door",
+        image: entranceone,
+        description: "Elevate your home's first impression with our elegant and durable entrance doors, designed for style and security.",
+      },
+      {
+        id: 18,
+        name: "Modern Entrance Door",
+        image: entrancetwo,
+        description: "Make a bold statement with our modern entrance doors, crafted for durability and timeless aesthetics.",
+      },
+      {
+        id: 19,
+        name: "Classic Entrance Door",
+        image: entrancethree,
+        description: "Discover the perfect blend of tradition and innovation with our classic yet sturdy entrance doors.",
+      },
+      {
+        id: 20,
+        name: "Stylish Entrance Door",
+        image: entrancefour,
+        description: "Add a touch of sophistication to your entryway with our stylish and secure entrance doors.",
       },
       // Add more entrance door products...
     ],
-  },
+  }
 ];
 
 export default function Products() {
@@ -142,7 +230,7 @@ export default function Products() {
                 >
                   {category.title}
                 </button>
-              ))} 
+              ))}
             </div>
 
             {/* Product Grid */}
@@ -153,7 +241,7 @@ export default function Products() {
                   className="group relative overflow-hidden  "
                 >
                   <div className="relative h-[548px] w-full ">
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.name}
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"

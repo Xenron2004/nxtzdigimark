@@ -4,7 +4,7 @@ import Image from "next/image";
 import HotelFloor from "../../../public/assets/Hotel_floor.png";
 import BlueGate from "../../../public/assets/Blue_Gate.png";
 import VillaNight from "../../../public/assets/Villa_night.png";
-
+import Link from "next/link";
 
 const Gallery = () => {
   return (
@@ -23,9 +23,11 @@ const Gallery = () => {
             create homes that meet their needs and inspire peace.
           </p>
           <div className="items-center mt-5 justify-center flex">
+            <Link href="/portfolio">
             <button className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-3">
               View Gallery
             </button>
+            </Link>
           </div>
 
           <div className="max-w-[466px] mt-[67px] w-full h-auto">

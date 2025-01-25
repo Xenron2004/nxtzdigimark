@@ -4,6 +4,7 @@ import Image from "next/image";
 import MainSection from "./components/MainSection";
 import StayTouch from "./components/StayTouch";
 import VisitOffice from "./components/VisitOffice";
+import Link from "next/link";
 const Contact = () => {
   return (
     <section className="flex flex-col mt-[90px] items-center justify-center  gap-[100px]   ">
@@ -39,9 +40,11 @@ const Contact = () => {
           </h3>
 
           {/* CTA Button */}
+          <Link href="/about">
           <button className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
             ABOUT US
           </button>
+          </Link>
         </div>
 
         {/* Right section  */}

@@ -119,9 +119,9 @@ const AboutNxt = () => {
           </motion.h3>
 
           {/* CTA Button */}
-          <button className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
+          {/* <button className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
             CONTACT
-          </button>
+          </button> */}
         </div>
 
         {/* Right section  */}

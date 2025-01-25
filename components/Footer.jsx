@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaDribbble,
   FaBehance,
+  FaLinkedin,
 } from "react-icons/fa";
 import Bg from "./Bg";
 import { FaXTwitter } from "react-icons/fa6";
@@ -59,7 +60,7 @@ const Footer = () => {
                     <FaPhoneAlt width={16} height={16} />
                   </div>
                   <div className="font-montserrat font-normal text-bodyText hover:text-headingText text-[15px]">
-                    +00 123 23456 87
+                    +91 9885368644 
                   </div>
                 </div>
               </li>{" "}
@@ -85,7 +86,7 @@ const Footer = () => {
               <ul className="space-y-3 text-start text-gray-600">
                 <li>
                   <a
-                    href=""
+                    href="/"
                     className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
                   >
                     Home
@@ -93,7 +94,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="/portfolio"
                     className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
                   >
                     Portfolio
@@ -101,7 +102,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="/about"
                     className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
                   >
                     About Us
@@ -109,7 +110,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href=""
+                    href="/products"
                     className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
                   >
                     Products
@@ -145,19 +146,14 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/privacy-policy"
+                    href="https://www.freeprivacypolicy.com/live/5d3adfa6-29f4-4864-aeb9-5e392f2a06eb"
                     className="hover:text-bodyText text-start transition duration-300 ease-in-out text-mainBodytext text-[15px] font-montserrat font-normal"
                   >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/terms-of-service"
-                    className="hover:text-bodyText duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
-                  >
-                    Terms of Service
-                  </Link>
+              
                 </li>
               </ul>
             </div>
@@ -170,29 +166,21 @@ const Footer = () => {
             Social Links
           </div>
           <div className="flex flex-row  gap-4 justify-between ">
-            <FaFacebookF
-              size={20}
-              className="hover:text-[#4A91F7] duration-300 ease-in-out text-mainBodytext cursor-pointer"
-            />
-            <Link href="">
-              <FaDribbble
+            <Link href="https://www.facebook.com/people/Nxtzengroup-SMteam/pfbid0jTRYdcV7BaL3CFeVujQpu29AREMxsyduC18PZogdFmLuL9J1z2Uk13fuUyHqDaUFl/">
+              <FaFacebookF
                 size={20}
-                className="hover:text-[#FF70A6] duration-300 ease-in-out  text-mainBodytext cursor-pointer"
+                className="hover:text-[#4A91F7] duration-300 ease-in-out text-mainBodytext cursor-pointer"
               />
             </Link>
-            <Link href="">
-              <FaXTwitter
+
+            <Link href="https://www.linkedin.com/company/nxtzengroup/">
+              <FaLinkedin
                 size={20}
                 className="hover:text-[#A5A5A5] duration-300 ease-in-out text-mainBodytext cursor-pointer"
               />
             </Link>
-            <Link href="">
-              <FaBehance
-                size={20}
-                className="hover:text-[#5A8EFF] duration-300 ease-in-out text-mainBodytext cursor-pointer"
-              />
-            </Link>
-            <Link href="">
+
+            <Link href="https://www.instagram.com/nxtzen_tostem?igsh=MW1mdTdlenUweWd0ZQ==">
               <FaInstagram
                 size={20}
                 className="hover:text-[#FF709E] duration-300 ease-in-out text-mainBodytext cursor-pointer"

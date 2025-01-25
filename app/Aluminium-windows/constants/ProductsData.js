@@ -36,7 +36,7 @@ export const slidingSeriesData = [
         },
       },
       {
-        imageSrc: SlgrThreePTwoT,
+        imageSrc: SlgrFourPTwoT,
         title: "4 Panels on 2 Tracks Grants Sliding Window",
         details: {
           "Frame Depth": "101.6 mm, 120 mm, 178 mm",
@@ -46,13 +46,13 @@ export const slidingSeriesData = [
         },
       },
       {
-        imageSrc: SlgrFourPTwoT,
+        imageSrc: SlgrThreePTwoT,
         title: "Sliding Door(3 Panels on 2 Tracks)SFS",
         details: {
           "Frame Depth": "101.6 mm, 120 mm, 178 mm",
           "Height of Sill": "50 mm",
           "Glass Thickness": "Up to 31.5 mm",
-          "Maximum Height of Door": "2250 mm",
+          "Maximum Height of Door": "2500 mm",
         },
       },
     ],

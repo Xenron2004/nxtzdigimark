@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CsWindowProductCard from './CsWindowProductCard'
+import FxWindowProductCard from './FxWindowProductCard'
 
 const CsWindowSeries = () => {
   return (
@@ -14,7 +14,7 @@ const CsWindowSeries = () => {
           Fixed Windows Series
         </h1>
       </div>
-      <CsWindowProductCard/>
+      <FxWindowProductCard/>
 
 
     
