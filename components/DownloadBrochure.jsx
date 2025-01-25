@@ -1,48 +1,18 @@
-// import React from "react";
 
-// const DownloadBrochure = () => {
-//   return (
-//     <div className="fixed left-4 top-1/2 transform -translate-y-1/2">
-//       <a
-//         href="/Tostem_Brochure flyer.pdf"
-//         download
-//         className="bg-primary text-white px-4 py-2 rounded shadow-lg hover:bg-secondary transition-all duration-300"
-//       >
-//         Download Brochure
-//       </a>
-//     </div>
-//   );
-// };
+'use client';
 
-// export default DownloadBrochure;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import React from "react";
+import { FileDown } from 'lucide-react';
 
 const DownloadBrochure = () => {
   return (
-    <div className="fixed left-0 top-1/2 transform z-50">
+    <div className="fixed left-0 top-1/2 -translate-y-1/2 z-50 -translate-x-[calc(100%-2.5rem)] hover:translate-x-0 transition-transform duration-300">
       <a
-        href="/brochure.pdf"
+        href="/Tostem_Brochure flyer.pdf"
         download
-        className="bg-primary text-white px-4 py-2 rounded-r-lg shadow-lg hover:secondary transition-all duration-300"
+        className="flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-3 rounded-r-lg shadow-lg transition-all duration-300 group [writing-mode:vertical-lr] rotate-180"
       >
-        Download Brochure
+        <FileDown className="w-4 h-4 text-white -rotate-90 group-hover:animate-bounce" />
+        <span className="font-medium font-montserrat text-white">Download Brochure</span>
       </a>
     </div>
   );
