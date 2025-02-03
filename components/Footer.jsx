@@ -27,10 +27,12 @@ const Footer = () => {
           </Link>
           <div className="font-montserrat mt-6 text-bodyText  font-normal text-[15px] md:text-[16px] max-w-[270px] w-full">
             Powered by{" "}
+            <Link href="https://www.linkedin.com/company/digimarksolutionsbiz/">
             <span className="underline text-bodyText hover:text-primary cursor-pointer">
               {" "}
               Digimark Solutions.{" "}
             </span>
+            </Link>
           </div>
         </div>
 

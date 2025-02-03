@@ -26,11 +26,12 @@ const Home = () => {
           {/* heading & small text */}
           <div className="flex flex-col gap-3 ">
             <motion.p
-             initial={{ opacity: 0, y: 50 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.4, delay: 0.4 }}
-             viewport={{ once: true }}
-            className=" capitalize font-montserrat font-semibold text-[15px] text-secondary">
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.4 }}
+              viewport={{ once: true }}
+              className=" capitalize font-montserrat font-semibold text-[15px] text-secondary"
+            >
               WELCOME TO NXTZEN
             </motion.p>
             <motion.h1
@@ -46,22 +47,24 @@ const Home = () => {
 
           {/* Japanese innovation text */}
           <motion.h3
-           initial={{ opacity: 0, y: 50 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.6, delay: 0.6 }}
-           viewport={{ once: true }}
-          className="font-montserrat max-w-[240px] tracking-[-1%]  w-full text-[22px] font-semibold text-start text-secondary ">
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="font-montserrat max-w-[240px] tracking-[-1%]  w-full text-[22px] font-semibold text-start text-secondary "
+          >
             Japanese <span className="font-medium"> Innovation </span>
             <span className="font-medium"> in Window</span> Design
           </motion.h3>
 
           {/* paragraph text */}
           <motion.p
-           initial={{ opacity: 0, y: 50 }}
-           whileInView={{ opacity: 1, y: 0 }}
-           transition={{ duration: 0.6, delay: 0.6 }}
-           viewport={{ once: true }}
-          className="max-w-[511px] w-full font-montserrat tracking-[2%] leading-[25px] font-normal text-bodyText text-[17px]">
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-[511px] w-full font-montserrat tracking-[2%] leading-[25px] font-normal text-bodyText text-[17px]"
+          >
             We are a leading lifestyle brand, offering innovative, sustainable
             housing solutions that elevate customer lifestyles with high-quality
             fenestration products, cutting-edge technology, and client-focused
@@ -71,20 +74,27 @@ const Home = () => {
           {/* CTA Button */}
           <Link href="/contact">
             <motion.button
-             initial={{ opacity: 0, y: -30 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.6, delay: 0.4 }}
-             viewport={{ once: true }}
-            className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4"
+            >
               GET IN TOUCH
             </motion.button>
           </Link>
         </div>
 
         {/* Right section  */}
-        <div className=" w-full max-w-[850px]    h-full">
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className=" w-full max-w-[850px]    h-full"
+        >
           <Image src={HeroImg} alt="Nxtzen hero Image" />
-        </div>
+        </motion.div>
       </div>
 
       <Whyus />

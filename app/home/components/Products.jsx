@@ -210,7 +210,7 @@ export default function Products() {
             OUR PRODUCTS
           </h2>
           <h1 className="text-[40px]  md:text-5xl font-montserrat max-w-[630px] w-full font-normal mb-4">
-            Modern Aluminium & Door Solutions
+            Premium Aluminium & Door Solutions
           </h1>
         </div>
 

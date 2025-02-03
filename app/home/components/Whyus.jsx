@@ -13,9 +13,14 @@ const Whyus = () => {
   return (
     <section className="flex flex-col-reverse md:flex-col-reverse lg:flex-row gap-7 max-w-[1280px] w-11/12 h-auto items-center justify-between">
       {/* left image */}
-      <div className="max-w-[708px] w-full h-auto">
+      <motion.div
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.6, delay: 0.6 }}
+      viewport={{ once: true }}
+      className="max-w-[708px] w-full h-auto">
         <Image src={Why} alt="Why us " />
-      </div>
+      </motion.div>
 
       {/* right section */}
       <div className="flex flex-col items-start justify-center ">
