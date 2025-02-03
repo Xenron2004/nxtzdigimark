@@ -18,6 +18,15 @@ import TsDesignDetails from "./components/TsDesignDetails";
 import SlitDesignDetails from "./components/SlitDesignDetails";
 import VertDesignDetails from "./components/VertDesignDetails";
 
+export const metadata = {
+  title: "Aluminium Windows",
+  description:
+    "Upgrade your space with NXTZEN Consultant's Pvt Ltd’s premium aluminium windows. Stylish, energy-efficient, and built to last for homes and businesses.",
+  keywords:
+    "aluminium windows, NXTZEN Consultant's Pvt Ltd aluminium windows, energy-efficient windows, modern aluminium windows, residential aluminium windows",
+};
+
+
 const AluminiumWindows = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-[100px]  mt-[90px] h-auto w-full">

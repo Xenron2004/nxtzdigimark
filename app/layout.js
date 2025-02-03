@@ -18,7 +18,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "NXTZEN Consultant's Pvt Ltd",
+  title: {
+    default: "NXTZEN Consultant's Pvt Ltd",
+    template: "%s - NXTZEN Consultant's Pvt Ltd",
+  },
+  // title: "NXTZEN Consultant's Pvt Ltd",
   description: "Discover NXTZEN: Innovative, stylish, and sustainable housing solutions with premium fenestration products. Elevate your lifestyle with cutting-edge technology and exceptional value.",
 };
 

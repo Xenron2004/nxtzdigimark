@@ -4,6 +4,14 @@ import AboutFacade from "./components/AboutFacade";
 import FacDesignDetails from "./components/FacDesignDetails";
 import FacWindowSeries from "./components/FacWindowSeries";
 
+export const metadata = {
+  title: "Aluminium Facades",
+  description:
+    "NXTZEN Consultant's Pvt Ltd offers high-quality aluminium facades that enhance building aesthetics, energy efficiency, and structural durability.",
+  keywords:
+    "aluminium facades, NXTZEN Consultant's Pvt Ltd facades, architectural aluminium facades, modern facades, commercial aluminium facades",
+};
+
 
 const Facades = () => {
   return (

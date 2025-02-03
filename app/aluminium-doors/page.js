@@ -14,6 +14,16 @@ import VentDetails from './components/VentDetails'
 import CorDetails from './components/CorDetails'
 import SlideDetails from './components/SlideDetails'
 
+
+export const metadata = {
+  title: "Aluminium Doors",
+  description:
+    "Discover NXTZEN Consultant's Pvt Ltd’s premium aluminium doors, designed for strength, durability, and modern aesthetics for residential and commercial spaces.",
+  keywords:
+    "aluminium doors, NXTZEN Consultant's Pvt Ltd aluminium doors, commercial aluminium doors, residential aluminium doors, high-quality aluminium doors",
+};
+
+
 const AluminiumDoors = () => {
   return (
    <section className='flex flex-col items-center justify-center gap-[100px]  mt-[90px] h-auto w-full'>

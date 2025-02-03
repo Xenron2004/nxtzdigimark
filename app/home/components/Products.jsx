@@ -15,14 +15,15 @@ import alwindows from "../assets/alwindowsone.webp";
 import alwindowsone from "../assets/alwindowstwo.webp";
 import alwindowstwo from "../assets/alwindowsthree.webp";
 import alwindowsthree from "../assets/alwindowsfour.webp";
-import interone from "../assets/interone.webp"
-import intertwo from "../assets/intertwo.webp"
-import interthree from "../assets/interthree.webp"
-import interfour from "../assets/interfour.webp"
-import entranceone from "../assets/entranceone.webp"
-import entrancetwo from "../assets/entrancetwo.webp"
-import entrancethree from "../assets/entrancethree.webp"
-import entrancefour from "../assets/entrancefour.webp"
+import interone from "../assets/interone.webp";
+import intertwo from "../assets/intertwo.webp";
+import interthree from "../assets/interthree.webp";
+import interfour from "../assets/interfour.webp";
+import entranceone from "../assets/entranceone.webp";
+import entrancetwo from "../assets/entrancetwo.webp";
+import entrancethree from "../assets/entrancethree.webp";
+import entrancefour from "../assets/entrancefour.webp";
+import Link from "next/link";
 
 const productCategories = [
   {
@@ -138,25 +139,29 @@ const productCategories = [
         id: 13,
         name: "Sleek Office Partitions",
         image: interone,
-        description: "Modern internal partitions designed to optimize space while maintaining privacy and aesthetics.",
+        description:
+          "Modern internal partitions designed to optimize space while maintaining privacy and aesthetics.",
       },
       {
         id: 14,
         name: "Customizable Office Partitions",
         image: intertwo,
-        description: "Elegant and customizable partitions for office spaces, providing flexibility and style.",
+        description:
+          "Elegant and customizable partitions for office spaces, providing flexibility and style.",
       },
       {
         id: 15,
         name: "Durable Office Partitions",
         image: interthree,
-        description: "High-quality internal partitions built for durability and designed for contemporary workspaces.",
+        description:
+          "High-quality internal partitions built for durability and designed for contemporary workspaces.",
       },
       {
         id: 16,
         name: "Stylish Office Partitions",
         image: interfour,
-        description: "Stylish and functional office partitions to create modern and organized environments.",
+        description:
+          "Stylish and functional office partitions to create modern and organized environments.",
       },
       // Add more partition products...
     ],
@@ -170,29 +175,33 @@ const productCategories = [
         id: 17,
         name: "Elegant Entrance Door",
         image: entranceone,
-        description: "Elevate your home's first impression with our elegant and durable entrance doors, designed for style and security.",
+        description:
+          "Elevate your home's first impression with our elegant and durable entrance doors, designed for style and security.",
       },
       {
         id: 18,
         name: "Modern Entrance Door",
         image: entrancetwo,
-        description: "Make a bold statement with our modern entrance doors, crafted for durability and timeless aesthetics.",
+        description:
+          "Make a bold statement with our modern entrance doors, crafted for durability and timeless aesthetics.",
       },
       {
         id: 19,
         name: "Classic Entrance Door",
         image: entrancethree,
-        description: "Discover the perfect blend of tradition and innovation with our classic yet sturdy entrance doors.",
+        description:
+          "Discover the perfect blend of tradition and innovation with our classic yet sturdy entrance doors.",
       },
       {
         id: 20,
         name: "Stylish Entrance Door",
         image: entrancefour,
-        description: "Add a touch of sophistication to your entryway with our stylish and secure entrance doors.",
+        description:
+          "Add a touch of sophistication to your entryway with our stylish and secure entrance doors.",
       },
       // Add more entrance door products...
     ],
-  }
+  },
 ];
 
 export default function Products() {
@@ -252,9 +261,11 @@ export default function Products() {
                         {product.name}
                       </h3>
                       <p className="text-sm mb-4">{product.description}</p>
-                      <button className="flex items-center gap-2 text-white hover:text-orange-400 transition-colors">
-                        View More <ArrowRight size={16} />
-                      </button>
+                      <Link href="/products">
+                        <button className="flex items-center gap-2 text-white hover:text-orange-400 transition-colors">
+                          View More <ArrowRight size={16} />
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

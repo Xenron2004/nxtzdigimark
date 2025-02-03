@@ -9,6 +9,15 @@ import Window from  "./assets/windowbox.webp"
 import ProductDetails from "./components/ProductDetails";
 
 
+export const metadata = {
+  title: "Our Products",
+  description:
+    "Discover NXTZEN Consultant's Pvt Ltd’s premium aluminium doors, windows, facades, and internal partitions designed for durability, style, and efficiency.",
+  keywords:
+    "NXTZEN Consultant's Pvt Ltd products, aluminium doors, aluminium windows, facades, internal partitions, high-quality aluminium",
+};
+
+
 const Products = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-[100px]  mt-[100px] h-auto w-full">

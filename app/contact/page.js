@@ -5,6 +5,17 @@ import MainSection from "./components/MainSection";
 import StayTouch from "./components/StayTouch";
 import VisitOffice from "./components/VisitOffice";
 import Link from "next/link";
+
+
+export const metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with NXTZEN Consultant's Pvt Ltd for premium aluminium doors, windows, facades, and architectural solutions. Let’s discuss your project today!",
+  keywords:
+    "Contact NXTZEN Consultant's Pvt Ltd, aluminium doors inquiry, aluminium windows inquiry, facades consultation, get in touch with NXTZEN Consultant's Pvt Ltd",
+};
+
+
 const Contact = () => {
   return (
     <section className="flex flex-col mt-[90px] items-center justify-center  gap-[100px]   ">
