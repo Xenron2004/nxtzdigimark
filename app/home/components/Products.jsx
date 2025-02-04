@@ -218,8 +218,8 @@ export default function Products() {
           <h2 className="text-[15px] text-secondary font-semibold font-montserrat uppercase tracking-wider mb-2">
             OUR PRODUCTS
           </h2>
-          <h1 className="text-[40px]  md:text-5xl font-montserrat max-w-[630px] w-full font-normal mb-4">
-            Premium Aluminium & Door Solutions
+          <h1 className="text-[40px]  md:text-5xl font-montserrat max-w-[800px] w-full font-normal mb-4">
+            Premium Aluminium Doors & Windows Solutions
           </h1>
         </div>
 

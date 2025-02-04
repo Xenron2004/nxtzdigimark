@@ -86,16 +86,16 @@ const AboutDoors = () => {
               viewport={{ once: true }}
               className=" capitalize font-montserrat font-semibold text-[15px] text-secondary"
             >
-              ABOUT NXTZEN
+              ABOUT US
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.6 }}
               viewport={{ once: true }}
-              className="font-montserrat max-w-[525px] text-[32px] text-start text-headingText font-medium tracking-[-1%]"
+              className="font-montserrat max-w-[575px] text-[32px] text-start text-headingText font-medium tracking-[-1%]"
             >
-              Nxtzen Aluminium Door Designs
+              Tostem Aluminium Door Designs
             </motion.h1>
           </div>
 

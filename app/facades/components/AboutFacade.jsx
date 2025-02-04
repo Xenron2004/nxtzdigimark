@@ -86,7 +86,7 @@ const AboutFacade = () => {
               viewport={{ once: true }}
               className=" capitalize font-montserrat font-semibold text-[15px] text-secondary"
             >
-              ABOUT NXTZEN
+              ABOUT US
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -95,7 +95,7 @@ const AboutFacade = () => {
               viewport={{ once: true }}
               className="font-montserrat max-w-[525px] text-[32px] text-start text-headingText font-medium tracking-[-1%]"
             >
-              Nxtzen Facades Designs
+              Tostem Facades Designs
             </motion.h1>
           </div>
 

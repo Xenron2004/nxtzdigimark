@@ -26,7 +26,7 @@ const PartDesignDetails = () => {
             OUR PRODUCTS
           </h2>
           <h1 className="text-[40px] uppercase  md:text-5xl font-montserrat max-w-[630px] w-full font-normal mb-4">
-            Hanging Doors
+            Partition Doors
           </h1>
         </div>
 
