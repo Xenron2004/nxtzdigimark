@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import HomeGlass from "../../../public/assets/Home_Glass.png";
 import Image from "next/image";

@@ -266,7 +266,7 @@ const Navbar = () => {
             </div>
             <div>
               <Link
-                href="/portfolio"
+                href="/gallery"
                 className="text-headingText font-montserrat font-medium text-[17px]"
               >
                 Gallery
