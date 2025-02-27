@@ -11,6 +11,7 @@ import Glass from "../../products/assets/wideglass.webp";
 import Japanese from "../../products/assets/japanese.webp";
 import Preengineered from "../../products/assets/pre-engineered.webp";
 import Window from "../../products/assets/windowbox.webp";
+import Link from "next/link";
 
 
 const features = [
@@ -126,9 +127,11 @@ const AboutEntrance = () => {
           </motion.div>
 
           {/* CTA Button */}
+          <Link href="/contact">
           <button className="font-montserrat mt-[8px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
             CONTACT
           </button>
+          </Link>
         </div>
       </div>
        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

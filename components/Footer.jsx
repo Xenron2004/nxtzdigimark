@@ -130,22 +130,8 @@ const Footer = () => {
                 Support
               </h3>
               <ul className="space-y-3 text-start text-gray-600 ">
-                <li>
-                  <Link
-                    href="/help-center"
-                    className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
-                  >
-                    Help Center
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/help-center"
-                    className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
-                  >
-                    FAQs
-                  </Link>
-                </li>
+              
+       
                 <li>
                   <Link
                     href="https://www.freeprivacypolicy.com/live/5d3adfa6-29f4-4864-aeb9-5e392f2a06eb"
