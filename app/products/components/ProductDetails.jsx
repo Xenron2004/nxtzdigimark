@@ -57,7 +57,7 @@ const products = [
 
 const ProductDetails = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-[100px]  mt-[100px] h-auto w-full">
+    <section className="flex flex-col items-center justify-center gap-[100px] h-auto w-full">
       <div className="max-w-[1280px] w-11/12 h-auto flex flex-col items-center justify-center">
         <div className="text-center flex items-center justify-center flex-col mb-16">
           <h2 className="text-[15px] text-secondary font-semibold font-montserrat uppercase tracking-wider mb-2">

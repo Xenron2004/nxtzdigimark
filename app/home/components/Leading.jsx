@@ -71,11 +71,22 @@ const Leading = () => {
             Patented 'TEXGUARD' Technology
           </motion.h4>
         </div>
-        <Link href="/about">
-          <button className="font-montserrat max-w-[150px] mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
-            ABOUT US
-          </button>
-        </Link>
+        <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="relative group w-full md:max-w-[180px]"
+          >
+            <Link href="/about">
+              <button className="mt-6 px-6 py-4 w-full bg-primary text-white shadow relative overflow-hidden">
+                <span className="relative uppercase font-montserrat text-[16px] tracking-[2%] text-white z-10">
+                  About us
+                </span>
+                <span className="absolute inset-0 bg-secondary transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+              </button>
+            </Link>
+          </motion.div>
       </div>
 
       {/* right section */}

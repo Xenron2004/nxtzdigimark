@@ -7,6 +7,8 @@ import logo from "../public/assets/nxtzen_logo.svg";
 import Link from "next/link";
 import { FaChevronDown } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
+import { motion } from "framer-motion";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu toggle
@@ -141,7 +143,7 @@ const Navbar = () => {
               Portfolio
             </Link>
             <Link
-              href="/portfolio"
+              href="/gallery"
               className="font-medium font-montserrat transition hover:text-primary duration-300 ease-in-out text-headingText text-base leading-tight"
             >
               Gallery
@@ -156,11 +158,19 @@ const Navbar = () => {
 
           {/* Buttons for large screens */}
           <div className="hidden lg:flex items-center justify-between gap-4">
+          <motion.div
+          
+            className="relative group w-full md:max-w-fit"
+          >
             <Link href="/contact">
-              <button className="max-w-[150px] font-montserrat h-[45px] bg-primary font-medium flex items-center justify-center text-white w-full py-4 px-4 ">
-                CONTACT US
+              <button className="mt-6 px-5 py-3 w-full bg-primary text-white shadow relative overflow-hidden">
+                <span className="relative uppercase font-montserrat text-[16px] tracking-[2%] text-white z-10">
+                  Contact Us
+                </span>
+                <span className="absolute inset-0 bg-secondary transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
               </button>
             </Link>
+          </motion.div>
           </div>
 
           <div className="lg:hidden flex  justify-between items-center">

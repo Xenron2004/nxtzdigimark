@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
@@ -171,11 +172,22 @@ const Reviews = () => {
             ))}
           </div>
           <div className="items-center mt-5 justify-center flex">
-            <Link href='/testimonials'>
-          <button className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-3">
-            View All
-          </button>
-          </Link>
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="relative group w-full md:max-w-fit"
+          >
+            <Link href="/testimonials">
+              <button className="mt-6 px-6 py-4 w-full bg-primary text-white shadow relative overflow-hidden">
+                <span className="relative uppercase font-montserrat text-[16px] tracking-[2%] text-white z-10">
+                  View all
+                </span>
+                <span className="absolute inset-0 bg-secondary transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+              </button>
+            </Link>
+          </motion.div>
           </div>
         </div>
          

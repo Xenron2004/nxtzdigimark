@@ -9,10 +9,9 @@ const EntranceDoors = () => {
     <section className="flex flex-col items-center justify-center gap-[100px]  mt-[90px] h-auto w-full">
       <MainSection />
       <div className="flex flex-col items-center justify-center h-auto max-w-[1280px] w-11/12">
-      <AboutEntrance/>
-      <GeiDesignDetails/>
-      <GeVentDoors/>
-    
+        <AboutEntrance />
+        <GeiDesignDetails />
+        <GeVentDoors />
       </div>
     </section>
   );

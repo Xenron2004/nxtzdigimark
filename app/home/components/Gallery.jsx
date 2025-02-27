@@ -5,6 +5,7 @@ import HotelFloor from "../../../public/assets/Hotel_floor.png";
 import BlueGate from "../../../public/assets/Blue_Gate.png";
 import VillaNight from "../../../public/assets/Villa_night.png";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Gallery = () => {
   return (
@@ -23,11 +24,22 @@ const Gallery = () => {
             create homes that meet their needs and inspire peace.
           </p>
           <div className="items-center mt-5 justify-center flex">
-            <Link href="/portfolio">
-            <button className="font-montserrat mt-[32px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-3">
-              View Gallery
-            </button>
-            </Link>
+            <motion.div
+              initial={{ opacity: 0, y: -30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="relative group w-full md:max-w-fit"
+            >
+              <Link href="/gallery">
+                <button className="mt-6 px-6 py-4 w-full bg-primary text-white shadow relative overflow-hidden">
+                  <span className="relative uppercase font-montserrat text-[16px] tracking-[2%] text-white z-10">
+                    View Gallery
+                  </span>
+                  <span className="absolute inset-0 bg-secondary transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
+                </button>
+              </Link>
+            </motion.div>
           </div>
 
           <div className="max-w-[466px] mt-[67px] w-full h-auto">
@@ -52,10 +64,14 @@ const Gallery = () => {
           </div>
         </div>
 
-         {/* Row-4 */}
-         <div className="flex flex-col items-center gap-5 justify-between">
-            <div className=" hidden xl:block w-[217px] h-[341px]"><Image src={HotelFloor} alt="Hero Image" /></div>
-            <div className=" hidden xl:block w-[217px] h-[220px] object-fill"><Image src={BlueGate} alt="Hero Image" /></div>
+        {/* Row-4 */}
+        <div className="flex flex-col items-center gap-5 justify-between">
+          <div className=" hidden xl:block w-[217px] h-[341px]">
+            <Image src={HotelFloor} alt="Hero Image" />
+          </div>
+          <div className=" hidden xl:block w-[217px] h-[220px] object-fill">
+            <Image src={BlueGate} alt="Hero Image" />
+          </div>
         </div>
       </div>
     </section>

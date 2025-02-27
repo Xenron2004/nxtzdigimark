@@ -1,238 +1,84 @@
-// import React, { useEffect, useRef } from "react";
-// import Image from "next/image";
-// import Link from "next/link";
-// import { ArrowLeft } from "lucide-react";
-
-// const projectDetails = {
-//   "louis-miller": {
-//     title: "LOUIS MILLER'S VILLA",
-//     description: "A luxurious villa featuring a sleek blend of modern aluminium window and door installations, designed to provide both style and functionality. The project showcases cutting-edge window architecture and durable door solutions, enhancing both the aesthetic and security of the property.",
-//     client: "LOUIS MILLER",
-//     category: "Aluminium Doors & Windows",
-//     images: [
-//       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-//       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-//       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop"
-//     ]
-//   },
-//   "thoms-mariya": {
-//     title: "THOMS MARIYA RESIDENCE",
-//     description: "An elegant residential project featuring premium aluminium windows that blend seamlessly with the modern architecture. The installation emphasizes natural light and panoramic views while maintaining energy efficiency.",
-//     client: "THOMS MARIYA",
-//     category: "Aluminium Windows",
-//     images: [
-//       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-//       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-//       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop"
-//     ]
-//   },
-//   "arthur-parry": {
-//     title: "ARTHUR PARRY PROJECT",
-//     description: "A contemporary commercial space featuring state-of-the-art aluminium window installations. The project combines functionality with modern design, creating an impressive facade that maximizes natural lighting.",
-//     client: "ARTHUR PARRY",
-//     category: "Aluminium Windows",
-//     images: [
-//       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-//       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-//       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
-//     ]
-//   },
-//   "eliza-barnes": {
-//     title: "ELIZA BARNES WARDROBE",
-//     description: "A custom wardrobe solution that combines style with functionality. The project features premium materials and innovative storage solutions, creating an organized and elegant space.",
-//     client: "ELIZA BARNES",
-//     category: "Wardrobes",
-//     images: [
-//       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-//       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-//       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop"
-//     ]
-//   }
-// };
-
-// This function is required for static site generation with output: 'export'
-// export async function generateStaticParams() {
-//   return Object.keys(projectDetails).map((slug) => ({
-//     slug: slug,
-//   }));
-// }
-
-// const ProjectDetail = ({ params }) => {
-//   const imagesContainerRef = useRef(null);
-//   const project = projectDetails[params.slug];
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (imagesContainerRef.current) {
-//         const scrollPosition = window.scrollY;
-//         imagesContainerRef.current.style.transform = `translateY(-${scrollPosition * 0.1}px)`;
-//       }
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   if (!project) {
-//     return <div>Project not found</div>;
-//   }
-
-//   return (
-//     <div className="min-h-screen bg-white">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-//         <Link
-//           href="/portfolio"
-//           className="inline-flex items-center text-gray-600 hover:text-gray-900 mb-8 transition-colors"
-//         >
-//           <ArrowLeft className="w-5 h-5 mr-2" />
-//           Back to Portfolio
-//         </Link>
-
-//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-//           <div className="space-y-8">
-//             <div>
-//               <h1 className="text-4xl md:text-5xl font-montserrat font-bold mb-8">
-//                 {project.title}
-//               </h1>
-
-//               <div className="space-y-6">
-//                 <div>
-//                   <h2 className="text-lg font-montserrat font-semibold mb-2">DESCRIPTION:</h2>
-//                   <p className="text-gray-600 leading-relaxed">
-//                     {project.description}
-//                   </p>
-//                 </div>
-
-//                 <div>
-//                   <h2 className="text-lg font-montserrat font-semibold mb-2">CLIENT:</h2>
-//                   <p className="text-gray-600">{project.client}</p>
-//                 </div>
-
-//                 <div>
-//                   <h2 className="text-lg font-montserrat font-semibold mb-2">CATEGORY:</h2>
-//                   <p className="text-gray-600">{project.category}</p>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-
-//           <div className="relative overflow-hidden" style={{ height: "800px" }}>
-//             <div ref={imagesContainerRef} className="space-y-6 transition-transform duration-300">
-//               {project.images.map((image, index) => (
-//                 <div key={index} className="relative h-[400px] w-full rounded-lg overflow-hidden">
-//                   <Image
-//                     src={image}
-//                     alt={`Project image ${index + 1}`}
-//                     fill
-//                     className="object-cover"
-//                   />
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ProjectDetail;
-
 import React from "react";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import ParallaxImage from "../components/ParallaxImage";
 import StayTouch from "@/app/contact/components/StayTouch";
 import VisitOffice from "@/app/contact/components/VisitOffice";
+import One from "../assets/cloveTechnologies/1.jpg";
+import Five from "../assets/cloveTechnologies/5.jpg";
+import Six from "../assets/cloveTechnologies/6.jpg";
+import Three from "../assets/cloveTechnologies/3.jpg";
+import Four from "../assets/cloveTechnologies/4.jpg";
+import Two from "../assets/cloveTechnologies/2.jpg";
+import Kone from "../assets/Keirthi Builders-Kay Space Apartments/1.jpg";
+import Ktwo from "../assets/Keirthi Builders-Kay Space Apartments/2.jpg"; 
+import Kthree from "../assets/Keirthi Builders-Kay Space Apartments/3.jpg"; 
+import Kfour from "../assets/Keirthi Builders-Kay Space Apartments/4.jpg";
+import Kfive from "../assets/Keirthi Builders-Kay Space Apartments/5.jpg";
+import Ksix from "../assets/Keirthi Builders-Kay Space Apartments/6.jpg";
+import Kseven from "../assets/Keirthi Builders-Kay Space Apartments/7.jpg";
+import Twotwindow from "../assets/Sastry/1.jpg";
+import Mtwo from "../assets/Sastry/2.jpg";
+import Doorfourtrackhandle from "../assets/Sastry/3.jpg";
+import Grantsfourtrack from "../assets/Sastry/7.jpg";
+import Villaone from "../assets/Sastry/4.jpg";
+import Windowtwotrackhandle from "../assets/Sastry/5.jpg";
+import Windowfourtrack from "../assets/Sastry/6.jpg";
+import Mrone from "../assets/Mrs. Suhasini/1.jpg";
+import Mrtwo from "../assets/Mrs. Suhasini/2.jpg";
+import Mrthree from "../assets/Mrs. Suhasini/3.jpg";
+import Mrfour from "../assets/Mrs. Suhasini/4.jpg";
+import Mrfive from "../assets/Mrs. Suhasini/5.jpg";
+import Mrsix from "../assets/Mrs. Suhasini/6.jpg";
+import Mrseven from "../assets/Mrs. Suhasini/7.jpg";
+
+
+
+
+
 
 const projectDetails = {
-  "louis-miller": {
-    title: "LOUIS MILLER'S VILLA",
+  "clove-technologies": {
+    title: "Clove Technologies",
     description:
-      "A luxurious villa featuring a sleek blend of modern aluminium window and door installations, designed to provide both style and functionality. The project showcases cutting-edge window architecture and durable door solutions, enhancing both the aesthetic and security of the property.",
-    client: "LOUIS MILLER",
+      "Designed and installed premium aluminum entrance doors and parking entrance doors for a modern office space. The sleek, durable aluminum frames provide a sophisticated look while ensuring security and longevity. The entrance doors enhance the office's aesthetic appeal, while the parking entrance doors offer seamless access and robust functionality.",
+    client: "Clove Technologies",
     category: "Aluminium Doors & Windows",
-    images: [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-    ],
+    images: [One.src, Five.src, Six.src, Three.src, Two.src, Four.src],
   },
-  "thoms-mariya": {
-    title: "THOMS MARIYA RESIDENCE",
+
+
+  "kay-space-apartments": {
+    title: "Keirthi Builders",
     description:
-      "An elegant residential project featuring premium aluminium windows that blend seamlessly with the modern architecture. The installation emphasizes natural light and panoramic views while maintaining energy efficiency.",
-    client: "THOMS MARIYA",
-    category: "Aluminium Windows",
-    images: [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-    ],
+      "Designed and installed premium aluminum entrance doors for Keirthi Builders' Kay Space office. The sleek, durable aluminum frames enhance security, functionality, and modern aesthetics.",
+    client: "Keirthi Builders",
+    category: "Aluminium Doors & Windows",
+    images: [Kone.src, Kfive.src, Ksix.src, Kthree.src, Ktwo.src, Kfour.src, Kseven.src],
   },
-  "arthur-parry": {
-    title: "ARTHUR PARRY PROJECT",
+
+  "mr-sastry": {
+    title: "Mr. Sastry",
     description:
-      "A contemporary commercial space featuring state-of-the-art aluminium window installations. The project combines functionality with modern design, creating an impressive facade that maximizes natural lighting.",
-    client: "ARTHUR PARRY",
-    category: "Aluminium Windows",
-    images: [
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-    ],
+      "Designed and installed high-quality aluminum windows, including 4-track and 2-track sliding windows, Grand 4-track windows, and 2-track handled windows. These durable and sleek designs enhance ventilation, functionality, and aesthetics while ensuring smooth operation and long-lasting performance.",
+    client: "Mr. Sastry",
+    category: "Aluminium Doors & Windows",
+    images: [Mtwo.src, Twotwindow.src,Grantsfourtrack.src, Doorfourtrackhandle.src, Villaone.src, Windowtwotrackhandle.src, Windowfourtrack.src, Windowfourtrack.src],
   },
-  "eliza-barnes": {
-    title: "ELIZA BARNES WARDROBE",
+  
+  "mrs-suhasini": {
+    title: "Mrs. Suhasini",
     description:
-      "A custom wardrobe solution that combines style with functionality. The project features premium materials and innovative storage solutions, creating an organized and elegant space.",
-    client: "ELIZA BARNES",
-    category: "Wardrobes",
-    images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-    ],
+      "Installed premium aluminum windows, offering a sleek design, durability, and smooth functionality. The windows enhance ventilation, natural light, and overall aesthetics while ensuring long-lasting performance.",
+    client: "Mrs. Suhasini",
+    category: "Aluminium Doors & Windows",
+    images: [Mrtwo.src, Mrthree.src,Mrfour.src, Mrfive.src, Mrsix.src, Mrseven.src],
   },
-  "thoms-mariya-windows": {
-    title: "THOMS MARIYA RESIDENCE",
-    description:
-      "An elegant residential project featuring premium aluminium windows that blend seamlessly with the modern architecture. The installation emphasizes natural light and panoramic views while maintaining energy efficiency.",
-    client: "THOMS MARIYA",
-    category: "Aluminium Windows",
-    images: [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-    ],
-  },
-  "eliza-barnes-wardrobes": {
-    title: "ELIZA BARNES WARDROBE",
-    description:
-      "A custom wardrobe solution that combines style with functionality. The project features premium materials and innovative storage solutions, creating an organized and elegant space.",
-    client: "ELIZA BARNES",
-    category: "Wardrobes",
-    images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
-    ],
-  },
+
+
+
 };
 
-// // Generate static parameters for SSG
-// export async function generateStaticParams() {
-//   return Object.keys(projectDetails).map((slug) => ({
-//     slug,
-//   }));
-// }
-
-// const ProjectDetail = async ({ params }) => {
-//   const project = projectDetails[params.slug];
-
-//   if (!project) {
-//     return <div>Project not found</div>;
-//   }
 
 // Generate static parameters for SSG
 export async function generateStaticParams() {
@@ -294,14 +140,14 @@ const ProjectDetail = async ({ params }) => {
                   </p>
                 </div>
 
-                <div>
+                {/* <div>
                   <h2 className="text-lg font-montserrat font-semibold mb-2">
                     CATEGORY:
                   </h2>
                   <p className="text-gray-600 font-montserrat text-[17px]">
                     {project.category}
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -311,10 +157,8 @@ const ProjectDetail = async ({ params }) => {
           </div>
         </div>
         <div className="flex mt-[80px]  w-full items-start justify-between  flex-col gap-[80px]">
-        <StayTouch 
-        
-        />
-        <VisitOffice/>
+          <StayTouch />
+          <VisitOffice />
         </div>
       </div>
     </div>
