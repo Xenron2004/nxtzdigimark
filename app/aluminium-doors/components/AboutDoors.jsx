@@ -64,7 +64,6 @@ const featured = [
 
 import { motion } from "framer-motion";
 import { FeatureCard } from "../../products/components/FeatureCard";
-import Link from "next/link";
 const AboutDoors = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-[60px] w-full h-auto">
