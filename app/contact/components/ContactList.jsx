@@ -3,6 +3,7 @@ import React from "react";
 import ContactCard from "./ContactCard";
 import { MdCall, MdEmail, MdMessage, MdWhatsapp } from "react-icons/md";
 import { FaBuilding } from "react-icons/fa";
+import Link from "next/link";
 
 const contactCardData = [
   {
@@ -39,18 +40,7 @@ const contactCardData = [
     ],
     iconBgColor: "",
   },
-  // {
-  //   icon: <MdMessage size={20} color="#f36224" />, // Example icon
-  //   heading: "Connect with Us",
-  //   bodyText: "Connect with us on social media to stay updated!.",
-  //   links: [
-  //     { text: "LinkedIn", url: "https://linkedin.com" },
-  //     { text: "Instagram", url: "https://instagram.com" },
-  //     { text: "Twitter", url: "https://twitter.com" },
-  //     { text: "Facebook", url: "https://facebook.com" },
-  //   ],
-  //   iconBgColor: "",
-  // },
+
 ];
 
 const ContactList = () => {
@@ -70,14 +60,16 @@ const ContactList = () => {
             <p className="font-montserrat hidden md:block font-normal text-bodyText text-[16px]">
               Reach out to us instantly!
             </p>
+            <Link href="https://wa.me/9885368644">
             <button
               className="max-w-[192px] px-4 bg-[#25D366] text-[18px] text-white font-montserrat font-medium w-full h-[50px]"
-              onClick={() => {
-                window.open("https://wa.me/9885368644", "_blank");
-              }}
+              // onClick={() => {
+              //   window.open("https://wa.me/9885368644", "_blank");
+              // }}
             >
               Send Message
             </button>
+            </Link>
           </div>
         </div>
       </div>

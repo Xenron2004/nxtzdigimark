@@ -163,7 +163,7 @@ const Navbar = () => {
             className="relative group w-full md:max-w-fit"
           >
             <Link href="/contact">
-              <button className="mt-6 px-5 py-3 w-full bg-primary text-white shadow relative overflow-hidden">
+              <button className=" px-5 py-3 w-full bg-primary text-white shadow relative overflow-hidden">
                 <span className="relative uppercase font-montserrat text-[16px] tracking-[2%] text-white z-10">
                   Contact Us
                 </span>
