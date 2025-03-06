@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: "https://nxtzengroup.com", // Your website URL
+    siteUrl: "https://nxtzengroup.in", // Your website URL
     generateRobotsTxt: true, // Generate robots.txt
     sitemapSize: 5000, // Maximum URLs per sitemap file
     generateIndexSitemap: false, // Set to true if you expect multiple sitemaps

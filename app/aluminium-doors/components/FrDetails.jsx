@@ -1,10 +1,11 @@
 import React from "react";
 import FeatureUse from "@/components/FeatureUse";
 import AluminiumDoor from "../../products/assets/products_about.webp";
+import FrenchDoors from "../assets/4844.jpg"
 
 const featuresAndUsesData = [
   {
-    imageSrc: AluminiumDoor,
+    imageSrc: FrenchDoors,
     FeatureHeading: "Timeless Features for French Doors",
     FeatureDesc:
       "Showcasing a classic, symmetrical design, our French doors offer elegance with functionality. Equipped with a multi-point locking system, superior insulation, and a range of finishes, they ensure security, comfort, and aesthetic appeal.",

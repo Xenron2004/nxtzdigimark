@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import AboutProductsImage from "../../products/assets/products_about.webp";
+import AboutProductsImage from "../assets/63419.jpg";
 import Image from "next/image";
 import Textguard from "../../products/assets/textguard.svg";
 import FeatureHighlight from "../../products/components/FeatureHiglight";
@@ -76,7 +76,7 @@ const AboutFacade = () => {
           />
         </div>
         {/* LEft section */}
-        <div className="flex flex-col gap-5  items-start md:max-w-[652px] w-full h-auto justify-center">
+        <div className="flex flex-col gap-3  items-start md:max-w-[652px] w-full h-auto justify-center">
           {/* heading & small text */}
           <div className="flex flex-col gap-3">
             <motion.p
@@ -129,7 +129,7 @@ const AboutFacade = () => {
 
           {/* CTA Button */}
           <Link href="/contact">
-            <button className="font-montserrat mt-[8px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
+            <button className="font-montserrat  bg-primary text-white text-[16px] tracking-[2%] px-6 py-3">
               CONTACT
             </button>
           </Link>

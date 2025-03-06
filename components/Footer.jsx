@@ -87,36 +87,36 @@ const Footer = () => {
               </h3>
               <ul className="space-y-3 text-start text-gray-600">
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/portfolio"
                     className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
                   >
                     Portfolio
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/about"
                     className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/products"
                     className="hover:text-bodyText transition duration-300 ease-in-out text-start text-mainBodytext text-[15px] font-montserrat font-normal"
                   >
                     Products
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

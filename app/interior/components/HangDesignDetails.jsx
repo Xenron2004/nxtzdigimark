@@ -1,10 +1,11 @@
 import React from "react";
 import FeatureUse from "@/components/FeatureUse";
 import AluminiumDoor from "../../products/assets/products_about.webp";
+import HangDoor from "../assets/6673.jpg"
 
 const featuresAndUsesData = [
   {
-    imageSrc: AluminiumDoor,
+    imageSrc: HangDoor,
     FeatureHeading: "Innovative Features of Hanging Doors",
     FeatureDesc:
       "Experience the perfect blend of functionality and style with our expertly crafted hanging doors. Equipped with soft-close rollers, adjustable panels, and concealed guide pieces, these doors are designed to operate smoothly while elevating your space with a sleek and modern finish.",

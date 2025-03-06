@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureUse from "@/components/FeatureUse";
-import AluminiumDoor from "../../products/assets/products_about.webp";
+import AluminiumDoor from "../assets/19924.jpg";
 
 const featuresAndUsesData = [
     {

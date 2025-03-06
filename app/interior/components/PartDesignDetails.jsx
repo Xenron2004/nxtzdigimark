@@ -1,10 +1,11 @@
 import React from "react";
 import FeatureUse from "@/components/FeatureUse";
 import AluminiumDoor from "../../products/assets/products_about.webp";
+import Partition from "../assets/3035.jpg"
 
 const featuresAndUsesData = [
   {
-    imageSrc: AluminiumDoor,
+    imageSrc: Partition,
     FeatureHeading: "Sleek Features of Partition Doors",
     FeatureDesc:
       "Our partition doors combine style and functionality, featuring slim aluminum profiles, versatile panel designs, and an anodized coating for scratch resistance and durability. Pre-engineered for precision, they ensure smooth operation and a luxurious aesthetic for any space.",

@@ -7,6 +7,9 @@ import BlueGate from "../../../public/assets/Blue_Gate.png";
 import VillaNight from "../../../public/assets/Villa_night.png";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import interFour from "../assets/interfour.webp"
+import imageTwo from "../assets/imageTwo.jpg"
+
 
 const Gallery = () => {
   return (
@@ -21,7 +24,7 @@ const Gallery = () => {
             Our Gallery
           </h1>
           <p className="text-[20px] font-montserrat font-normal text-headingText md:max-w-[466px] max-w-full w-full">
-            NxtZen products combine elegance and reliability, helping families
+            TOSTEM products combine elegance and reliability, helping families
             create homes that meet their needs and inspire peace.
           </p>
           <div className="items-center mt-5 justify-center flex">
@@ -68,10 +71,10 @@ const Gallery = () => {
         {/* Row-4 */}
         <div className="flex flex-col items-center gap-5 justify-between">
           <div className=" hidden xl:block w-[217px] h-[341px]">
-            <Image src={HotelFloor} alt="Hero Image" />
+            <Image src={interFour} alt="Hero Image" />
           </div>
-          <div className=" hidden xl:block w-[217px] h-[220px] object-fill">
-            <Image src={BlueGate} alt="Hero Image" />
+          <div className=" hidden xl:block w-[217px]  object-fill h-[341px]">
+            <Image src={imageTwo} alt="Hero Image" />
           </div>
         </div>
       </div>

@@ -1,10 +1,11 @@
 import React from "react";
 import FeatureUse from "@/components/FeatureUse";
 import AluminiumDoor from "../../products/assets/products_about.webp";
+import AwnImage from "../assets/10266.jpg";
 
 const featuresAndUsesData = [
   {
-    imageSrc: AluminiumDoor,
+    imageSrc: AwnImage,
     FeatureHeading: "Superior Features for Awning Windows",
     FeatureDesc:
       "Hinged at the top and opening outward, awning windows are designed to enhance airflow and natural light. With nano-tech gaskets ensuring waterproof sealing, they offer unmatched durability through a robust aluminum build. Optimized for easy installation and maintenance, these windows promise long-lasting performance and convenience.",

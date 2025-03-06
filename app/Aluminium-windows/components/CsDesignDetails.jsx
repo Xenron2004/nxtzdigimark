@@ -1,10 +1,11 @@
 import React from "react";
 import FeatureUse from "@/components/FeatureUse";
 import AluminiumDoor from "../../products/assets/products_about.webp";
+import CsWindow from "../assets/12613.jpg";
 
 const featuresAndUsesData = [
     {
-      imageSrc: AluminiumDoor,
+      imageSrc: CsWindow,
       FeatureHeading: "Timeless Features for Sliding Windows",
       FeatureDesc:
         "Designed with wide glass panels and narrow sightlines, sliding windows offer expansive views while maintaining a sleek, modern aesthetic. With rubber gaskets for superior dust, noise, and water protection, these windows combine functionality with durability. Performance-tested for insulation and weather resistance, they outlast traditional UPVC alternatives and feature modular components for easy installation.",

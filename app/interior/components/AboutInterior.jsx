@@ -12,6 +12,7 @@ import Japanese from "../../products/assets/japanese.webp";
 import Preengineered from "../../products/assets/pre-engineered.webp";
 import Window from "../../products/assets/windowbox.webp";
 import Link from "next/link";
+import AbtInterior from "../assets/2149397565.jpg"
 
 const features = [
   {
@@ -71,12 +72,12 @@ const AboutInterior = () => {
         <div className="max-w-[602px] w-full max-h-[650px] h-full">
           <Image
             className=" w-full object-cover    h-full"
-            src={AboutProductsImage}
+            src={AbtInterior}
             alt="Nxtzen hero Image"
           />
         </div>
         {/* LEft section */}
-        <div className="flex flex-col gap-5  items-start md:max-w-[652px] w-full h-auto justify-center">
+        <div className="flex flex-col gap-3  items-start md:max-w-[652px] w-full h-auto justify-center">
           {/* heading & small text */}
           <div className="flex flex-col gap-3">
             <motion.p
@@ -129,7 +130,7 @@ const AboutInterior = () => {
 
           {/* CTA Button */}
           <Link href="/contact">
-            <button className="font-montserrat mt-[8px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
+            <button className="font-montserrat mt-[8px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-3">
               CONTACT
             </button>
           </Link>

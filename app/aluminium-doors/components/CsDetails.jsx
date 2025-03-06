@@ -1,23 +1,23 @@
 import React from "react";
 import FeatureUse from "@/components/FeatureUse";
-import AluminiumDoor from "../../products/assets/products_about.webp";
+import Casement from "../assets/14610.jpg";
+
 
 const featuresAndUsesData = [
-    {
-      imageSrc: AluminiumDoor,
-      FeatureHeading: "Innovative Features for Modern Casement Doors",
-      FeatureDesc:
-        "Built with rust-proof aluminum frames and a multi-point locking system, our casement doors offer unmatched security and durability. Weather-sealed and available in a variety of colors and designs, they combine style with long-lasting performance.",
-      UseHeading: "Versatile Uses for Every Space",
-      UseDesc:
-        "Ideal for home or office entrances, private rooms, or smaller spaces needing ventilation, these doors enhance functionality and security. Perfectly suited for areas prone to extreme weather, they deliver both protection and elegance",
-    },
+  {
+    imageSrc: Casement,
+    FeatureHeading: "Innovative Features for Modern Casement Doors",
+    FeatureDesc:
+      "Built with rust-proof aluminum frames and a multi-point locking system, our casement doors offer unmatched security and durability. Weather-sealed and available in a variety of colors and designs, they combine style with long-lasting performance.",
+    UseHeading: "Versatile Uses for Every Space",
+    UseDesc:
+      "Ideal for home or office entrances, private rooms, or smaller spaces needing ventilation, these doors enhance functionality and security. Perfectly suited for areas prone to extreme weather, they deliver both protection and elegance",
+  },
 
-    // Add more objects here if needed
-  ];
+  // Add more objects here if needed
+];
 
 const CsDetails = () => {
-
   return (
     <section className="flex flex-col items-center justify-center gap-[100px]  mt-[100px] h-auto w-full">
       <div className="max-w-[1280px] w-full h-auto flex gap-x-[56px] flex-col items-center justify-center">
@@ -26,25 +26,24 @@ const CsDetails = () => {
             OUR PRODUCTS
           </h2>
           <h1 className="text-[40px] uppercase  md:text-5xl font-montserrat max-w-[630px] w-full font-normal mb-4">
-          Casement Doors
+            Casement Doors
           </h1>
         </div>
 
-       {/* Features and uses section */}
-       <section className="flex flex-col gap-12 w-full max-w-[1280px] ">
-      {featuresAndUsesData.map((item, index) => (
-        <FeatureUse
-          key={index}
-          index={index}
-          imageSrc={item.imageSrc}
-          FeatureHeading={item.FeatureHeading}
-          FeatureDesc={item.FeatureDesc}
-          UseHeading={item.UseHeading}
-          UseDesc={item.UseDesc}
-        />
-      ))}
-    </section>
-
+        {/* Features and uses section */}
+        <section className="flex flex-col gap-12 w-full max-w-[1280px] ">
+          {featuresAndUsesData.map((item, index) => (
+            <FeatureUse
+              key={index}
+              index={index}
+              imageSrc={item.imageSrc}
+              FeatureHeading={item.FeatureHeading}
+              FeatureDesc={item.FeatureDesc}
+              UseHeading={item.UseHeading}
+              UseDesc={item.UseDesc}
+            />
+          ))}
+        </section>
       </div>
     </section>
   );

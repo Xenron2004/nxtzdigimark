@@ -12,6 +12,9 @@ import Japanese from "../../products/assets/japanese.webp";
 import Preengineered from "../../products/assets/pre-engineered.webp";
 import Window from "../../products/assets/windowbox.webp";
 import Link from "next/link";
+import Aldoor from "../assets/Aldoor.jpg"
+
+
 
 const features = [
   {
@@ -71,7 +74,7 @@ const AboutDoors = () => {
         <div className="max-w-[602px] w-full max-h-[650px] h-full">
           <Image
             className=" w-full object-cover    h-full"
-            src={AboutProductsImage}
+            src={Aldoor}
             alt="Nxtzen hero Image"
           />
         </div>
@@ -128,7 +131,7 @@ const AboutDoors = () => {
 
           {/* CTA Button */}
           <Link href="/contact">  
-          <button className="font-montserrat mt-[8px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-4">
+          <button className="font-montserrat mt-[8px] bg-primary text-white text-[16px] tracking-[2%] px-6 py-3">
             CONTACT
           </button>
           </Link>

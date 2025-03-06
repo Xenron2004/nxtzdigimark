@@ -6,6 +6,10 @@ import Image from "next/image";
 import Awards from "./Awards";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import OurImg from "../../aluminium-doors/assets/aldoorsfive.webp"
+
+
+
 const AboutNxt = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-[80px] w-full h-auto">
@@ -138,7 +142,7 @@ const AboutNxt = () => {
         <div>
           <Image
             className=" w-full    h-full"
-            src={AboutNxtImage}
+            src={OurImg}
             alt="Nxtzen hero Image"
           />
         </div>

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { casementSeriesData} from "../constants/ProductsData";
+import { casementSeriesData } from "../constants/ProductsData";
 
 const ProductCard = ({ product }) => {
   return (
@@ -11,21 +11,25 @@ const ProductCard = ({ product }) => {
         <Image
           src={product.imageSrc}
           alt={product.title}
-        //   width={413}
-        //   height={300}
+          //   width={413}
+          //   height={300}
           className="object-cover w-full h-full"
         />
       </div>
 
       {/* Product Title */}
-      <h3 className="text-[20px] font-medium text-headingText font-montserrat text-start mt-5">{product.title}</h3>
+      <h3 className="text-[20px] font-medium text-headingText font-montserrat text-start mt-5">
+        {product.title}
+      </h3>
 
       {/* Product Details */}
       <div className="mt-3 font-montserrat  text-[15px] text-gray-700">
         {Object.entries(product.details).map(([key, value], index) => (
           <p key={index} className="grid grid-cols-2 justify-between gap-8">
             <span className="font-medium font-montserrat">{key}:</span>
-            <span className="font-normal text-[14px] text-[#949596]">{value}</span>
+            <span className="font-normal text-[14px] text-[#949596]">
+              {value}
+            </span>
           </p>
         ))}
       </div>

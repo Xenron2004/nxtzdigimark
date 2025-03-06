@@ -17,7 +17,7 @@ const Leading = () => {
             viewport={{ once: true }}
             className="text-[40px] max-w-[463px] w-full leading-[52px] font-montserrat font-normal text-headingText tracking-[-1%]"
           >
-            What makes NXTZEN a leading name
+            What makes TOSTEM a leading name
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: -30 }}
@@ -26,7 +26,7 @@ const Leading = () => {
             viewport={{ once: true }}
             className="font-montserrat text-bodyText font-normal text-[16px] tracking-[-1%] leading-[25.5px]"
           >
-            Our products are developed to withstand the harshest weather
+            TOSTEM products are developed to withstand the harshest weather
             conditions, setting new quality benchmarks and yardsticks in the
             industry, which is what makes us a leading name in home solutions
             around the world.

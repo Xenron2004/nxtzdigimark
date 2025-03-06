@@ -63,12 +63,10 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
-            className="max-w-[511px] w-full font-montserrat tracking-[2%] leading-[25px] font-normal text-bodyText text-[17px]"
+            className="max-w-[480px] w-full font-montserrat tracking-[2%] leading-[25px] font-normal text-bodyText text-[17px]"
           >
-            We are a leading lifestyle brand, offering innovative, sustainable
-            housing solutions that elevate customer lifestyles with high-quality
-            fenestration products, cutting-edge technology, and client-focused
-            services.
+          NXTZEN is an exclusive channel partner for TOSTEM, the leading Japanese brand in aluminium windows and doors, catering to the North Andhra and East Godavari region. With a commitment to quality, innovation, and superior craftsmanship, we bring world-class, precision-engineered aluminium solutions to homes and commercial spaces.
+
           </motion.p>
 
           {/* CTA Button */}

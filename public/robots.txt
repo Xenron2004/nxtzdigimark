@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://nxtzengroup.com
+Host: https://nxtzengroup.in
 
 # Sitemaps
-Sitemap: https://nxtzengroup.com/sitemap.xml
+Sitemap: https://nxtzengroup.in/sitemap.xml
